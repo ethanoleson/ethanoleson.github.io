@@ -156,7 +156,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
   background: #e8f4fa;
   padding: 12px 16px;
   border-radius: 8px;
-  margin: 16px 0;
+  margin: 16px 0;s
   border: 1px solid #c8dfea;
 ">
   November 24th, 2025
