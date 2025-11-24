@@ -1,36 +1,30 @@
 <style>
-
   /* Global Markdown link color */
-a {
-  color: #FDB614;
-}
+  a {
+    color: #FDB614;
+  }
 
-/* Override for button-style links */
-.sidebar-button,
-.top-button {
-  color: white !important;
-}
   /* ------------------ BUTTON STYLES FOR SIDEBAR ------------------ */
-  <style>
-    .sidebar-button {
-      display: block;
-      padding: 8px 14px;
-      margin-bottom: 8px;
-      background: #219EBC;      
-      color: #FDB614 !important;     /* GOLD TEXT */
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+  .sidebar-button {
+    display: block;
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    background: #219EBC;          /* Blue */
+    color: #FDB614 !important;    /* Gold text on blue */
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
-    .sidebar-button:hover {
-      filter: brightness(0.9);
-    }
+  .sidebar-button:hover {
+    filter: brightness(0.9);
+  }
 
-  /* Option: special color for CV */
+  /* Red CV button (white text) */
   .sidebar-button.red {
-    background: #9D2235;
-    color: white         
+    background: #9D2235;          /* Razorback red */
+    color: white !important;
+  }
 
   /* ------------------ PAGE LAYOUT ------------------ */
   .page-layout {
