@@ -1,5 +1,9 @@
-![Ethan_in_jackson](ethan_in_jackson.png)
 
+
+<img src="ethan_in_jackson.png" width="25%">
+
+
+[Ethan's repos](https://github.com/ethanoleson) * [CSRG](https://clastics.uark.edu/)
 
 Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayetteville, AR. 
 
@@ -22,3 +26,7 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 
 ## Pages
 - [Projects](projects.md)
+
+## Code on GitHub
+
+[Ethan's repos](https://github.com/ethanoleson)
