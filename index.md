@@ -69,6 +69,12 @@
     GitHub
   </a>
 
+  <a href= "www.linkedin.com/in/ethan-oleson-38a2a2156"
+     target="_blank" rel="noopener noreferrer"
+     class="sidebar-button">
+     LinkedIn
+  </a>
+
   <a href="mailto:eoleson@uark.edu" class="sidebar-button">
     Email
   </a>
