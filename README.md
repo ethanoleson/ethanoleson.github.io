@@ -86,10 +86,6 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 ## Pages
 - [Projects](projects.md)
 
-## Code on GitHub
-
-[Ethan's repos](https://github.com/ethanoleson)
-
 <div style="text-align: center;">
   <img src="jack_and_ethan_hogs_and_owls_2024.JPG" width="40%">
 </div>
