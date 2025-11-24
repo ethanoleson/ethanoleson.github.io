@@ -158,7 +158,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 
 **2018 – 2022:** B.S. in Earth Sciences (minor in math), Montana State University, Bozeman, MT.  
 <div style="margin-left: 20px;">Advisor: Devon A. Orme</div>
-</br>
+
 
 Orcid: 0009-0000-6225-4338  
 
