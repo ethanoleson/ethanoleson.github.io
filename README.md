@@ -42,8 +42,7 @@ a {
    ">UArk Geosciences</a>
 </div>
 <br>
-
-Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayetteville, AR. 
+**Hi! I'm Ethan.** I am a Ph.D. student at the **University of Arkansas** in Fayetteville, AR. 
 
 I am a geochronologist and sedimentologist who is interested in understanding the evolution of modern and ancient sedimentary systems and their linkages to tectonic processes through the use and development of thermo/geochronologic techniques.
 
@@ -78,11 +77,11 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 </a>
 
 ## Frequent Collaborators
-- Matthew Malkowski at UT-Austin [Malkowski Website](https://www.mmalkowski.com/)
+- [Matthew Malkowski](https://www.mmalkowski.com/) at UT-Austin
 
 - Jack Fekete at BP p.l.c (formerly of the University of Arkansas)
 
-- Boise State University Isotope Geology Labratory
+- Boise State University Isotope Geology Laboratory
 ## Pages
 - [Projects](projects.md)
 
