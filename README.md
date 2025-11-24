@@ -6,32 +6,11 @@ a {
 
 <!-- <img src="ethan_in_jackson.png" width="40%"> -->
 <img src="ethan_2.png" width="40%">
+<br>
+** I like sed rocks and statistics**
+<br>
 
-<!-- <a href="https://github.com/ethanoleson" style="
-  display: inline-block;
-  padding: 8px 14px;
-  background: #219EBC;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-">
-  Github
-</a>
-
-<a href="https://clastics.uark.edu/" style="
-  display: inline-block;
-  padding: 8px 14px;
-  background: #219EBC;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-">
-  CSRG Website
-</a> -->
-I like sed rocks and statistics!
-<div style="display: flex; gap: 10px;">
+<div style="display: flex; gap: 10px; margin-bottom: 20px;">
   <a href="https://github.com/ethanoleson" style="
     display: inline-block;
     padding: 8px 14px;
@@ -51,6 +30,7 @@ I like sed rocks and statistics!
     text-decoration: none;
     font-weight: 600;
   ">CSRG Website</a>
+
   <a href="https://geosciences.uark.edu/" style="
     display: inline-block;
     padding: 8px 14px;
@@ -60,10 +40,8 @@ I like sed rocks and statistics!
     text-decoration: none;
     font-weight: 600;
    ">UArk Geosciences</a>
-
 </div>
-<!-- [Ethan's repos](https://github.com/ethanoleson) | [CSRG](https://clastics.uark.edu/) -->
-
+<br><br>
 
 Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayetteville, AR. 
 
