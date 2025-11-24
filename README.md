@@ -11,7 +11,7 @@ a {
 <br>
 
 <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-  <a href="https://github.com/ethanoleson" style="
+<a href="https://github.com/ethanoleson" target="_blank" rel="noopener noreferrer" style="
     display: inline-block;
     padding: 8px 14px;
     background: #219EBC;
