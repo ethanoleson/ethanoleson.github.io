@@ -1,9 +1,6 @@
-
-
 <img src="ethan_in_jackson.png" width="25%">
 
-
-[Ethan's repos](https://github.com/ethanoleson) * [CSRG](https://clastics.uark.edu/)
+[Ethan's repos](https://github.com/ethanoleson) | [CSRG](https://clastics.uark.edu/)
 
 Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayetteville, AR. 
 
@@ -14,12 +11,15 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 ## My CV:
 
 2024 - Present: Ph.D. in Geosciences, University of Arkansas, Fayetteville. 
+
     Advisor: Glenn R. Sharman
 
-2022 - 2024: M.S. in Geology, University of Arkansas, Fayetteville. 
+2022 - 2024: M.S. in Geology, University of Arkansas, Fayetteville.
+
     Advisor: Matthew D. Covington
 
 2018 - 2022 B.S. in Earth Sciences (minor in math), Montana State University, Bozeman, MT. 
+
     Advisor:  Devon A. Orme
 
 [PDF of CV](E_W_Oleson_CV_2025_geo.pdf)
