@@ -54,7 +54,7 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 <a href="E_W_Oleson_CV_2025_geo.pdf" style="
   display: inline-block;
   padding: 8px 14px;
-  background: #0366d6;
+  background: '#219EBC';
   color: white;
   border-radius: 6px;
   text-decoration: none;
