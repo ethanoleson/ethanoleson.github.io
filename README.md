@@ -41,7 +41,7 @@ a {
     font-weight: 600;
    ">UArk Geosciences</a>
 </div>
-<br><br>
+<br>
 
 Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayetteville, AR. 
 
