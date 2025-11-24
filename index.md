@@ -1,17 +1,72 @@
 <style>
-a {
-  color: #FDB614;
-}
+  /* Global link color */
+  a {
+    color: #FDB614;
+  }
+
+  /* Layout for sidebar + main content */
+  .page-layout {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    min-width: 180px;
+    max-width: 220px;
+    font-size: 0.95em;
+  }
+
+  .sidebar h3 {
+    margin-top: 0;
+  }
+
+  .sidebar a {
+    display: block;
+    margin: 4px 0;
+    text-decoration: none;
+  }
+
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Optional: make images scale nicely */
+  .main-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile: stack sidebar above content */
+  @media (max-width: 800px) {
+    .page-layout {
+      flex-direction: column;
+    }
+  }
 </style>
 
-<!-- <img src="ethan_in_jackson.png" width="40%"> -->
+<div class="page-layout">
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <h3>Pages</h3>
+    <a href="/">Home</a>
+    <a href="projects.md">Projects</a>
+    <a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+    <a href="https://github.com/ethanoleson" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="mailto:eoleson@uark.edu">Email</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
 <img src="ethan_2.png" width="40%">
 <br>
 **I like sed rocks and statistics.**
 <br>
 
 <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-<a href="https://github.com/ethanoleson" target="_blank" rel="noopener noreferrer" style="
+  <a href="https://github.com/ethanoleson" target="_blank" rel="noopener noreferrer" style="
     display: inline-block;
     padding: 8px 14px;
     background: #219EBC;
@@ -51,9 +106,10 @@ a {
      text-decoration:none;
      font-weight:600;
    ">
-  Email Me!
-</a>
+    Email Me!
+  </a>
 </div>
+
 <br>
 **Hi! I'm Ethan.** I am a Ph.D. student at the **University of Arkansas** in Fayetteville, AR. 
 
@@ -92,11 +148,9 @@ Orcid: 0009-0000-6225-4338
 </a>
 
 ## Frequent Collaborators
-- [Matthew Malkowski](https://www.mmalkowski.com/) at UT-Austin
-
-- Jack Fekete at BP p.l.c (formerly of the University of Arkansas)
-
-- Boise State University Isotope Geology Laboratory
+- [Matthew Malkowski](https://www.mmalkowski.com/) at UT-Austin  
+- Jack Fekete at BP p.l.c (formerly of the University of Arkansas)  
+- Boise State University Isotope Geology Laboratory  
 
 ## Pages
 - [Projects](projects.md)
@@ -115,3 +169,7 @@ Orcid: 0009-0000-6225-4338
       day: "numeric"
     });
 </script>
+
+  </div> <!-- end .main-content -->
+
+</div> <!-- end .page-layout -->
