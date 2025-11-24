@@ -1,16 +1,15 @@
 <style>
 a {
-  color: '#FDB614';   /* blue */
+  color: #FDB614;
 }
 </style>
 
 <img src="ethan_in_jackson.png" width="40%">
 
-
 <a href="https://github.com/ethanoleson" style="
   display: inline-block;
   padding: 8px 14px;
-  background: '#219EBC';
+  background: #219EBC;
   color: white;
   border-radius: 6px;
   text-decoration: none;
@@ -22,7 +21,7 @@ a {
 <a href="https://clastics.uark.edu/" style="
   display: inline-block;
   padding: 8px 14px;
-  background: '#219EBC';
+  background: #219EBC;
   color: white;
   border-radius: 6px;
   text-decoration: none;
@@ -54,7 +53,7 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 <a href="E_W_Oleson_CV_2025_geo.pdf" style="
   display: inline-block;
   padding: 8px 14px;
-  background: '#219EBC';
+  background: #219EBC;
   color: white;
   border-radius: 6px;
   text-decoration: none;
