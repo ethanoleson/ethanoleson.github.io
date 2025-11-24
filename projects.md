@@ -1,3 +1,9 @@
+<style>
+a {
+  color: #FDB614;
+}
+</style>
+
 ## Projects
 
 I am interested mostly in the intersection of mathematics and sedimentology. 
