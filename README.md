@@ -21,7 +21,7 @@ a {
     font-weight: 600;
   ">Github</a>
 
-  <a href="https://clastics.uark.edu/" style="
+  <a href="https://clastics.uark.edu/" target="_blank" rel="noopener noreferrer" style="
     display: inline-block;
     padding: 8px 14px;
     background: #219EBC;
@@ -31,7 +31,7 @@ a {
     font-weight: 600;
   ">CSRG Website</a>
 
-  <a href="https://geosciences.uark.edu/" style="
+  <a href="https://geosciences.uark.edu/" target="_blank" rel="noopener noreferrer" style="
     display: inline-block;
     padding: 8px 14px;
     background: #9D2235;
@@ -64,7 +64,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 <div style="margin-left: 20px;">Advisor: Devon A. Orme</div>
 <br>
 
-<a href="E_W_Oleson_CV_2025_geo.pdf" style="
+<a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer" style="
   display: inline-block;
   padding: 8px 14px;
   background: #219EBC;
