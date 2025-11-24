@@ -21,7 +21,17 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 <div style="margin-left: 20px;">Advisor: Devon A. Orme</div>
 <br>
 
-[PDF of CV](E_W_Oleson_CV_2025_geo.pdf)
+<a href="E_W_Oleson_CV_2025_geo.pdf" style="
+  display: inline-block;
+  padding: 8px 14px;
+  background: #0366d6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+">
+  Download CV
+</a>
 
 ## Pages
 - [Projects](projects.md)
