@@ -40,6 +40,19 @@ a {
     text-decoration: none;
     font-weight: 600;
    ">UArk Geosciences</a>
+
+  <a href="mailto:eoleson@uark.edu" 
+   style="
+     display:inline-block;
+     padding:8px 14px;
+     background: #219EBC;
+     color:white;
+     border-radius:6px;
+     text-decoration:none;
+     font-weight:600;
+   ">
+  Email Me!
+</a>
 </div>
 <br>
 **Hi! I'm Ethan.** I am a Ph.D. student at the **University of Arkansas** in Fayetteville, AR. 
