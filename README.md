@@ -64,6 +64,8 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 <div style="margin-left: 20px;">Advisor: Devon A. Orme</div>
 <br>
 
+Orcid: 0009-0000-6225-4338
+
 <a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer" style="
   display: inline-block;
   padding: 8px 14px;
