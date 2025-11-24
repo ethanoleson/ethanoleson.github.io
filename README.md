@@ -88,3 +88,18 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 ## Code on GitHub
 
 [Ethan's repos](https://github.com/ethanoleson)
+
+<div style="text-align: center;">
+  <img src="jack_and_ethan_hogs_and_owls_2024.JPG" width="40%">
+</div>
+
+<p>Updated: <span id="last-updated"></span></p>
+
+<script>
+  document.getElementById("last-updated").textContent =
+    new Date(document.lastModified).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+</script>
