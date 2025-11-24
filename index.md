@@ -148,9 +148,6 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 
 Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathematical Modeling of Geologic Processes ● Geochronology Methods Development ● Geochronology Statistics ● U-series Geochemistry
 
-<<<<<<< HEAD:index.md
-## My CV
-=======
 ## Research Highlight:
 <div style="
   background: #e8f4fa;
@@ -168,8 +165,6 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 </div>
 
 ## My CV:
->>>>>>> 4e02d24 (research highlight):README.md
-
 **2024 – Present:** Ph.D. in Geosciences, University of Arkansas, Fayetteville.  
 <div style="margin-left: 20px;">Advisor: Glenn R. Sharman</div>
 
