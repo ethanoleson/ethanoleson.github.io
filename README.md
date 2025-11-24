@@ -6,7 +6,7 @@ a {
 
 <img src="ethan_in_jackson.png" width="40%">
 
-<a href="https://github.com/ethanoleson" style="
+<!-- <a href="https://github.com/ethanoleson" style="
   display: inline-block;
   padding: 8px 14px;
   background: #219EBC;
@@ -28,7 +28,29 @@ a {
   font-weight: 600;
 ">
   CSRG Website
-</a>
+</a> -->
+
+<div style="display: flex; gap: 10px;">
+  <a href="https://github.com/ethanoleson" style="
+    display: inline-block;
+    padding: 8px 14px;
+    background: #219EBC;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  ">Github</a>
+
+  <a href="https://clastics.uark.edu/" style="
+    display: inline-block;
+    padding: 8px 14px;
+    background: #219EBC;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  ">CSRG Website</a>
+</div>
 <!-- [Ethan's repos](https://github.com/ethanoleson) | [CSRG](https://clastics.uark.edu/) -->
 
 Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayetteville, AR. 
