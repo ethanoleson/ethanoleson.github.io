@@ -18,7 +18,7 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 2018 - 2022 B.S. in Earth Sciences (minor in math), Montana State University, Bozeman, MT. 
     Advisor:  Devon A. Orme
 
-[CV](E_W.Oleson_CV_2025_geo.pdf)
+[PDF of CV](E_W_Oleson_CV_2025_geo.pdf)
 
 ## Pages
 - [Projects](projects.md)
