@@ -148,7 +148,7 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 
 Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathematical Modeling of Geologic Processes ● Geochronology Methods Development ● Geochronology Statistics ● U-series Geochemistry
 
-## Research Highlight:
+## Research Highlight
 <div style="
   background: #e8f4fa;
   padding: 12px 16px;
