@@ -3,7 +3,7 @@ a {
   color: #FDB614;
 }
 </style>
-
+<section class="main-content" markdown="1">
 ## Projects
 
 I am interested mostly in the intersection of mathematics and sedimentology. 
@@ -29,10 +29,12 @@ I am also interested in:
      display:inline-block;
      padding:8px 14px;
      background: #219EBC;
-     color:white;
+     color: #FDB614;
      border-radius:6px;
      text-decoration:none;
      font-weight:600;
    ">
   Email Me!
 </a>
+
+</section>
