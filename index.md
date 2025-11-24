@@ -82,7 +82,7 @@
   <a href="https://geosciences.uark.edu/" target="_blank" rel="noopener noreferrer"
      class = "sidebar-button red">
     UArk Geosciences
-  >
+  </a>
 </nav>
 
   <!-- MAIN CONTENT (Markdown enabled!) -->
