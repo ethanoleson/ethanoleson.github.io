@@ -82,6 +82,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 - Jack Fekete at BP p.l.c (formerly of the University of Arkansas)
 
 - Boise State University Isotope Geology Laboratory
+
 ## Pages
 - [Projects](projects.md)
 
