@@ -11,17 +11,17 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 ## My CV:
 
 2024 - Present: Ph.D. in Geosciences, University of Arkansas, Fayetteville. 
-
-    Advisor: Glenn R. Sharman
-
+<div style="margin-left: 20px;">
+Advisor: Glenn R. Sharman
+</div>
 2022 - 2024: M.S. in Geology, University of Arkansas, Fayetteville.
-
-    Advisor: Matthew D. Covington
-
+<div style="margin-left: 20px;">
+Advisor: Matthew D. Covington
+</div>
 2018 - 2022 B.S. in Earth Sciences (minor in math), Montana State University, Bozeman, MT. 
-
-    Advisor:  Devon A. Orme
-
+<div style="margin-left: 20px;">
+Advisor:  Devon A. Orme
+</div>
 [PDF of CV](E_W_Oleson_CV_2025_geo.pdf)
 
 ## Pages
