@@ -7,7 +7,7 @@ a {
 <!-- <img src="ethan_in_jackson.png" width="40%"> -->
 <img src="ethan_2.png" width="40%">
 <br>
-**I like sed rocks and statistics**
+**I like sed rocks and statistics.**
 <br>
 
 <div style="display: flex; gap: 10px; margin-bottom: 20px;">
