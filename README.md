@@ -4,7 +4,8 @@ a {
 }
 </style>
 
-<img src="ethan_in_jackson.png" width="40%">
+<!-- <img src="ethan_in_jackson.png" width="40%"> -->
+<img src="ethan_2.png" width="40%">
 
 <!-- <a href="https://github.com/ethanoleson" style="
   display: inline-block;
@@ -29,7 +30,7 @@ a {
 ">
   CSRG Website
 </a> -->
-
+I like sed rocks and statistics!
 <div style="display: flex; gap: 10px;">
   <a href="https://github.com/ethanoleson" style="
     display: inline-block;
@@ -69,6 +70,9 @@ Hi! I'm Ethan. I am a Ph.D. student at the University of Arkansas in Fayettevill
 I am a geochronologist and sedimentologist who is interested in understanding the evolution of modern and ancient sedimentary systems and their linkages to tectonic processes through the use and development of thermo/geochronologic techniques.
 
 I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
+
+Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathematical Modeling of Geologic Processes ● Geochronology Methods Development ● Geochronology Statistics ● U-series Geochemistry
+
 ## My CV:
 
 **2024 – Present:** Ph.D. in Geosciences, University of Arkansas, Fayetteville.  
