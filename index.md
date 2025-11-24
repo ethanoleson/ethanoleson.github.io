@@ -1,24 +1,36 @@
 <style>
-  /* ------------------ BUTTON STYLES FOR SIDEBAR ------------------ */
-  .sidebar-button {
-    display: block;
-    padding: 8px 14px;
-    margin-bottom: 8px;
-    background: #219EBC;        /* Blue button color */
-    color: white !important;    /* Force white text */
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-  }
 
-  .sidebar-button:hover {
-    filter: brightness(0.9);     /* Slight hover darkening */
-  }
+  /* Global Markdown link color */
+a {
+  color: #FDB614;
+}
+
+/* Override for button-style links */
+.sidebar-button,
+.top-button {
+  color: white !important;
+}
+  /* ------------------ BUTTON STYLES FOR SIDEBAR ------------------ */
+  <style>
+    .sidebar-button {
+      display: block;
+      padding: 8px 14px;
+      margin-bottom: 8px;
+      background: #219EBC;      
+      color: #FDB614 !important;     /* GOLD TEXT */
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .sidebar-button:hover {
+      filter: brightness(0.9);
+    }
 
   /* Option: special color for CV */
   .sidebar-button.red {
-    background: #9D2235;         /* Razorback red */
-  }
+    background: #9D2235;
+    color: white         
 
   /* ------------------ PAGE LAYOUT ------------------ */
   .page-layout {
@@ -43,29 +55,30 @@
 <div class="page-layout">
 
   <!-- SIDEBAR -->
-  <nav class="sidebar">
-    <h3>Pages</h3>
+<nav class="sidebar">
+  <h3>Pages</h3>
 
-    <a href="/" class="sidebar-button">Home</a>
+  <a href="/" class="sidebar-button">Home</a>
+  <a href="projects.md" class="sidebar-button">Projects</a>
 
-    <a href="projects.md" class="sidebar-button">Projects</a>
+  <h3 style="margin-top: 20px;">Links</h3>
 
-    <a href="E_W_Oleson_CV_2025_geo.pdf" 
-       target="_blank" rel="noopener noreferrer" 
-       class="sidebar-button red">
-      CV (PDF)
-    </a>
+  <a href="E_W_Oleson_CV_2025_geo.pdf" 
+     target="_blank" rel="noopener noreferrer" 
+     class="sidebar-button red">
+    CV (PDF)
+  </a>
 
-    <a href="https://github.com/ethanoleson"
-       target="_blank" rel="noopener noreferrer"
-       class="sidebar-button">
-      GitHub
-    </a>
+  <a href="https://github.com/ethanoleson"
+     target="_blank" rel="noopener noreferrer"
+     class="sidebar-button">
+    GitHub
+  </a>
 
-    <a href="mailto:eoleson@uark.edu" class="sidebar-button">
-      Email
-    </a>
-  </nav>
+  <a href="mailto:eoleson@uark.edu" class="sidebar-button">
+    Email
+  </a>
+</nav>
 
   <!-- MAIN CONTENT (Markdown enabled!) -->
   <section class="main-content" markdown="1">
@@ -143,7 +156,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 
 Orcid: 0009-0000-6225-4338  
 
-<a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer" style="
+<!-- <a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer" style="
   display: inline-block;
   padding: 8px 14px;
   background: #219EBC;
@@ -153,7 +166,7 @@ Orcid: 0009-0000-6225-4338
   font-weight: 600;
 ">
   Download CV
-</a>
+</a> -->
 
 ## Frequent Collaborators
 
