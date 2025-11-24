@@ -157,9 +157,9 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
   border: 1px solid #c8dfea;
 ">
   **November 24th, 2025**
-  <br>
+  <br><br>
   I recently published a standalone Windows application on GitHub that makes converting .tif and .jpeg files to DeepZoom (.dzi) files super easy. Before now, this was not a trivial process and required deprecating several image processing libraries, such as PIL. Now, all you need to do is download a program and go! This was motivated by the launch of Glenn Sharman’s Petro-Image, which requires a .dzi file to visualize your scanned thin sections at very high resolution and at multiple extinction angles in PPL and XPL. 
-  <br>
+  <br><br>
   Access this program by following the link in the side panel to my GitHub page. 
   
 </div>
