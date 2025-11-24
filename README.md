@@ -50,6 +50,16 @@ a {
     text-decoration: none;
     font-weight: 600;
   ">CSRG Website</a>
+  <a href="https://geosciences.uark.edu/" style="
+    display: inline-block;
+    padding: 8px 14px;
+    background: #9D2235;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+   ">UArk Geosciences</a>
+
 </div>
 <!-- [Ethan's repos](https://github.com/ethanoleson) | [CSRG](https://clastics.uark.edu/) -->
 
