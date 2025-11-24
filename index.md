@@ -134,6 +134,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 <br>
 
 Orcid: 0009-0000-6225-4338
+<br>
 
 <a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer" style="
   display: inline-block;
@@ -146,6 +147,7 @@ Orcid: 0009-0000-6225-4338
 ">
   Download CV
 </a>
+<br>
 
 ## Frequent Collaborators
 - [Matthew Malkowski](https://www.mmalkowski.com/) at UT-Austin  
