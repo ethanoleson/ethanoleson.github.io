@@ -83,7 +83,7 @@ a {
   <!-- MAIN CONTENT (Markdown enabled!) -->
   <section class="main-content" markdown="1">
 
-Jackson Hole NP. *Photo by Glenn Sharman*  
+ 
 <img src="ethan_2.png" width="40%">
 
 **I like sed rocks and statistics.**
