@@ -1,4 +1,4 @@
-<img src="ethan_in_jackson.png" width="25%">
+<img src="ethan_in_jackson.png" width="40%">
 
 [Ethan's repos](https://github.com/ethanoleson) | [CSRG](https://clastics.uark.edu/)
 
