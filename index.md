@@ -148,7 +148,27 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 
 Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathematical Modeling of Geologic Processes ● Geochronology Methods Development ● Geochronology Statistics ● U-series Geochemistry
 
+<<<<<<< HEAD:index.md
 ## My CV
+=======
+## Research Highlight:
+<div style="
+  background: #e8f4fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+  border: 1px solid #c8dfea;
+">
+  November 24th, 2025
+  <br>
+  I recently published a standalone Windows application on GitHub that makes converting .tif and .jpeg files to DeepZoom (.dzi) files super easy. Before now, this was not a trivial process and required deprecating several image processing libraries, such as PIL. Now, all you need to do is download a program and go! This was motivated by the launch of Glenn Sharman’s Petro-Image, which requires a .dzi file to visualize your scanned thin sections at very high resolution and at multiple extinction angles in PPL and XPL. 
+  <br>
+  Access this program by following the link in the side panel to my GitHub page. 
+  
+</div>
+
+## My CV:
+>>>>>>> 4e02d24 (research highlight):README.md
 
 **2024 – Present:** Ph.D. in Geosciences, University of Arkansas, Fayetteville.  
 <div style="margin-left: 20px;">Advisor: Glenn R. Sharman</div>
