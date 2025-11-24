@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects – Ethan Oleson</title>
+  <style>
+    a { color: #FDB614; }
+
+    .sidebar-button {
+      display: block;
+      padding: 8px 14px;
+      margin-bottom: 8px;
+      background: #219EBC;
+      color: #FDB614 !important;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .sidebar-button.red {
+      background: #9D2235;
+      color: white !important;
+    }
+
+    .sidebar-button:hover {
+      filter: brightness(0.9);
+    }
+
+    .page-layout {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    }
+
+    .sidebar {
+      min-width: 180px;
+      max-width: 220px;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 800px) {
+      .page-layout {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-layout">
+
+  <nav class="sidebar">
+    <h3>Pages</h3>
+
+    <a href="/" class="sidebar-button">Home</a>
+    <a href="projects.html" class="sidebar-button">Projects</a>
+
+    <h3 style="margin-top: 20px;">Links</h3>
+
+    <a href="E_W_Oleson_CV_2025_geo.pdf"
+       target="_blank" rel="noopener noreferrer"
+       class="sidebar-button red">
+      CV (PDF)
+    </a>
+
+    <a href="https://github.com/ethanoleson"
+       target="_blank" rel="noopener noreferrer"
+       class="sidebar-button">
+      GitHub
+    </a>
+
+    <a href="mailto:eoleson@uark.edu" class="sidebar-button">
+      Email
+    </a>
+  </nav>
+
+  <section class="main-content">
+
+    <h2>Projects</h2>
+
+    <p>I am interested mostly in the intersection of mathematics and sedimentology.</p>
+
+    <p><strong>My current projects include:</strong></p>
+    <ol>
+      <li>Evaluating the methods we use to calculate max depo age</li>
+      <li>Fine tuning LA-ICP-MS for DZ U-Pb Geochronology</li>
+      <li>Tectonic Sedimentology in Patagonia, Argentina</li>
+    </ol>
+
+    <p><strong>I am also interested in:</strong></p>
+    <ol>
+      <li>Mathematically modeling basin processes</li>
+      <li>Geomorphology in cave systems</li>
+      <li>Geometric properties of minerals in thermochronology</li>
+      <li>Developing new chronologic techniques</li>
+    </ol>
+
+    <p><strong>If you are also interested in these things, email me!</strong></p>
+
+    <a href="mailto:eoleson@uark.edu"
+       style="
+         display:inline-block;
+         padding:8px 14px;
+         background:#219EBC;
+         color:#FDB614;
+         border-radius:6px;
+         text-decoration:none;
+         font-weight:600;
+       ">
+      Email Me!
+    </a>
+
+  </section>
+</div>
+
+</body>
+</html>

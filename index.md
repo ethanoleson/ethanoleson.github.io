@@ -53,7 +53,7 @@
   <h3>Pages</h3>
 
   <a href="/" class="sidebar-button">Home</a>
-  <a href="projects.md" class="sidebar-button">Projects</a>
+  <a href="projects.html" class="sidebar-button">Projects</a>
 
   <h3 style="margin-top: 20px;">Links</h3>
 
