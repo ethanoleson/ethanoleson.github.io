@@ -78,6 +78,11 @@
   <a href="mailto:eoleson@uark.edu" class="sidebar-button">
     Email
   </a>
+
+  <a href="https://geosciences.uark.edu/" target="_blank" rel="noopener noreferrer"
+     class = "sidebar-button red">
+    UArk Geosciences
+  >
 </nav>
 
   <!-- MAIN CONTENT (Markdown enabled!) -->
@@ -88,7 +93,7 @@
 
 **I like sed rocks and statistics.**
 
-<div style="display: flex; gap: 10px; margin-bottom: 20px;">
+<!-- <div style="display: flex; gap: 10px; margin-bottom: 20px;">
   <a href="https://github.com/ethanoleson" target="_blank" rel="noopener noreferrer" style="
     display: inline-block;
     padding: 8px 14px;
@@ -131,7 +136,7 @@
    ">
     Email Me!
   </a>
-</div>
+</div> -->
 
 ---
 
