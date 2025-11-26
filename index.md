@@ -52,7 +52,8 @@
 <nav class="sidebar">
 
   <img src="logo_2.png" 
-       style="width:100%; border-radius:8px; margin-bottom:15px;">
+       style="width:100%; border-radius:8px; margin-bottom:5px;">
+
   <h3>Pages</h3>
 
   <a href="/" class="sidebar-button">Home</a>
@@ -90,8 +91,8 @@
 
   <!-- MAIN CONTENT (Markdown enabled!) -->
   <section class="main-content" markdown="1">
-<img src="logo_2.png" width="60%">
- <br><br>
+<!-- <img src="logo_2.png" width="60%">
+ <br><br> -->
 <img src="ethan_2.png" width="40%">
 
 **I like sed rocks and statistics.**
