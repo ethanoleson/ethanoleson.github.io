@@ -50,6 +50,9 @@
 
   <!-- SIDEBAR -->
 <nav class="sidebar">
+
+  <img src="logo_2.png" 
+       style="width:100%; border-radius:8px; margin-bottom:15px;">
   <h3>Pages</h3>
 
   <a href="/" class="sidebar-button">Home</a>
