@@ -87,8 +87,8 @@
 
   <!-- MAIN CONTENT (Markdown enabled!) -->
   <section class="main-content" markdown="1">
-
- 
+<img src="=logo_2.png" width="60%">
+ <br><br>
 <img src="ethan_2.png" width="40%">
 
 **I like sed rocks and statistics.**
