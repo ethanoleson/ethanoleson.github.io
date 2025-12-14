@@ -58,6 +58,7 @@
 
   <a href="/" class="sidebar-button">Home</a>
   <a href="/projects.html" class="sidebar-button">Projects</a>
+  <a href="/files.html" class="sidebar-button">Files</a>
 
   <h3 style="margin-top: 20px;">Links</h3>
 
