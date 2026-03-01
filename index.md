@@ -154,6 +154,8 @@ I primarily work on detrital and igneous zircon UPb and AHe/ZHe.
 
 Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathematical Modeling of Geologic Processes ● Geochronology Methods Development ● Geochronology Statistics ● U-series Geochemistry
 
+My research has been financially supported by the Geological Society of America, the American Association of Petroleum Geologists, the industry partners of the Detrital Geochronology Laboratory, and the Cave Conservancy Foundation. 
+
 ## Research Highlight
 <div markdown="1" style="
   background: #e8f4fa;
