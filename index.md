@@ -164,6 +164,21 @@ My research has been financially supported by the Geological Society of America,
   margin: 16px 0;s
   border: 1px solid #c8dfea;
 ">
+  **March, 2nd, 2026**
+  <br><br>
+  We recently returned from a month of field work in southern Patagonia alongside our friends and frequent collaborators at the University of Texas at Autsin. This was fieldwork related to my Ph.D. dissertation, and the samples will provide some awesome and fruitful research. Stay tuned!
+
+<img src="EC_pic.jpeg" width="40%">
+
+</div>
+
+<div markdown="1" style="
+  background: #e8f4fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 16px 0;s
+  border: 1px solid #c8dfea;
+">
   **November 24th, 2025**
   <br><br>
   I recently published a standalone Windows application on GitHub that makes converting .tif and .jpeg files to DeepZoom (.dzi) files super easy. Before now, this was not a trivial process and required deprecating several image processing libraries, such as PIL. Now, all you need to do is download a program and go! This was motivated by the launch of Glenn Sharman’s [*Petro-Image*](https://github.com/grsharman/petro-image?tab=readme-ov-file"), which requires a .dzi file to visualize your scanned thin sections at very high resolution and at multiple extinction angles in PPL and XPL. 
