@@ -166,7 +166,7 @@ My research has been financially supported by the Geological Society of America,
 ">
   **March 2nd, 2026**
   <br><br>
-  We recently returned from a month of field work in southern Patagonia alongside our friends and frequent collaborators at the University of Texas at Autsin. This was fieldwork related to my Ph.D. dissertation, and the samples will provide some awesome and fruitful research. Stay tuned!
+  We recently returned from a month of field work in southern Patagonia alongside our friends and frequent collaborators at the University of Texas at Austin. This was fieldwork related to my Ph.D. dissertation. The samples will hopefully provide opportunities for some awesome and fruitful research. Stay tuned!
 
 <img src="EC_pic.jpeg" width="70%">
 
