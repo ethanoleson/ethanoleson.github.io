@@ -81,7 +81,7 @@ Geo/Thermochronology ● Tectonic Sedimentology ● Basin Analysis ● Mathemati
 
 Orcid: 0009-0000-6225-4338
 
-<a href="E_W_Oleson_CV_2025_geo.pdf" target="_blank" rel="noopener noreferrer" style="
+<a href="EWO_cv_geo_v2_2026.pdf" target="_blank" rel="noopener noreferrer" style="
   display: inline-block;
   padding: 8px 14px;
   background: #219EBC;

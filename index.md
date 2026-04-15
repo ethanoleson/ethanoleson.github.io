@@ -63,7 +63,7 @@
 
   <h3 style="margin-top: 20px;">Links</h3>
 
-  <a href="E_W_Oleson_CV_2025_geo.pdf" 
+  <a href="EWO_cv_geo_v2_2026.pdf" 
      target="_blank" rel="noopener noreferrer" 
      class="sidebar-button red">
     CV (PDF)
