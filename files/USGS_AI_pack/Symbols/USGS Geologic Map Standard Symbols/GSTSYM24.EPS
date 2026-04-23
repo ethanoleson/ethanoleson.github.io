@@ -1,0 +1,9562 @@
+%!PS-Adobe-3.0 EPSF-3.0
+
+%%Creator: Adobe Illustrator(TM) for Windows, version 4.0
+
+%%For: (OSP                                     ) (USGS                                    )
+
+%%Title: (GSGSTS24.EPS)
+
+%%CreationDate: (9/13/95) (9:50 AM)
+
+%%BoundingBox: -101 -565 456 107
+
+%%DocumentProcessColors: Black
+
+%%DocumentFonts: Univers-Oblique
+
+%%+ Univers-Light
+
+%%+ Univers
+
+%%+ Souvenir-Medium
+
+%%+ Helvetica
+
+%%DocumentSuppliedResources: procset Adobe_packedarray 2.0 0
+
+%%+ procset Adobe_cmykcolor 1.1 0
+
+%%+ procset Adobe_cshow 1.1 0
+
+%%+ procset Adobe_customcolor 1.0 0
+
+%%+ procset Adobe_typography_AI3 1.0 0
+
+%%+ procset Adobe_pattern_AI3 1.0 0
+
+%%+ procset Adobe_Illustrator_AI3 1.0 0
+
+%AI3_ColorUsage: Black&White
+
+%AI3_TemplateBox: 172.5 -254.5625 172.5 -254.5625
+
+%AI3_TileBox: -114.7748 -607.3791 461.2252 151.6209
+
+%AI3_DocumentPreview: Header
+
+%%Template:
+
+%%PageOrigin:-114.7748 -607.3791
+
+%%AI3_PaperRect:-14.4003 774.0177 597.8537 -18.0004
+
+%%AI3_Margin:14.4003 -15.6004 -21.8405 18.0004
+
+%%EndComments
+
+%%BeginProlog
+
+%%BeginResource: procset Adobe_packedarray 2.0 0
+
+%%Title: (Packed Array Operators)
+
+%%Version: 2.0 
+
+%%CreationDate: (8/2/90) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+userdict /Adobe_packedarray 5 dict dup begin put
+
+/initialize			% - initialize -
+
+{
+
+/packedarray where
+
+	{
+
+	pop
+
+	}
+
+	{
+
+	Adobe_packedarray begin
+
+	Adobe_packedarray
+
+		{
+
+		dup xcheck
+
+			{
+
+			bind
+
+			} if
+
+		userdict 3 1 roll put
+
+		} forall
+
+	end
+
+	} ifelse
+
+} def
+
+/terminate			% - terminate -
+
+{
+
+} def
+
+/packedarray		% arguments count packedarray array
+
+{
+
+array astore readonly
+
+} def
+
+/setpacking			% boolean setpacking -
+
+{
+
+pop
+
+} def
+
+/currentpacking		% - setpacking boolean
+
+{
+
+false
+
+} def
+
+currentdict readonly pop end
+
+%%EndResource
+
+Adobe_packedarray /initialize get exec
+
+%%BeginResource: procset Adobe_cmykcolor 1.1 0
+
+%%Title: (CMYK Color Operators)
+
+%%Version: 1.1 
+
+%%CreationDate: (1/23/89) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+currentpacking true setpacking
+
+userdict /Adobe_cmykcolor 4 dict dup begin put
+
+/initialize			% - initialize -
+
+{
+
+/setcmykcolor where
+
+	{
+
+	pop
+
+	}
+
+	{
+
+	userdict /Adobe_cmykcolor_vars 2 dict dup begin put
+
+	/_setrgbcolor
+
+		/setrgbcolor load def
+
+	/_currentrgbcolor
+
+		/currentrgbcolor load def
+
+	Adobe_cmykcolor begin
+
+	Adobe_cmykcolor
+
+		{
+
+		dup xcheck
+
+			{
+
+			bind
+
+			} if
+
+		pop pop
+
+		} forall
+
+	end
+
+	end
+
+	Adobe_cmykcolor begin
+
+	} ifelse
+
+} def
+
+/terminate			% - terminate -
+
+{
+
+currentdict Adobe_cmykcolor eq
+
+	{
+
+	end
+
+	} if
+
+} def
+
+/setcmykcolor		% cyan magenta yellow black setcmykcolor -
+
+{
+
+1 sub 4 1 roll
+
+3
+
+	{
+
+	3 index add neg dup 0 lt
+
+		{
+
+		pop 0
+
+		} if
+
+	3 1 roll
+
+	} repeat
+
+Adobe_cmykcolor_vars /_setrgbcolor get exec
+
+pop
+
+} def 
+
+/currentcmykcolor	% - currentcmykcolor cyan magenta yellow black
+
+{
+
+Adobe_cmykcolor_vars /_currentrgbcolor get exec
+
+3
+
+	{
+
+	1 sub neg 3 1 roll
+
+	} repeat
+
+0
+
+} def
+
+currentdict readonly pop end
+
+setpacking
+
+
+
+%%EndResource
+
+%%BeginResource: procset Adobe_cshow 1.1 0
+
+%%Title: (cshow Operator)
+
+%%Version: 1.1 
+
+%%CreationDate: (1/23/89) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+currentpacking true setpacking
+
+userdict /Adobe_cshow 3 dict dup begin put
+
+/initialize			% - initialize -
+
+{
+
+/cshow where
+
+	{
+
+	pop
+
+	}
+
+	{
+
+	userdict /Adobe_cshow_vars 1 dict dup begin put
+
+	/_cshow		% - _cshow proc
+
+		{} def
+
+	Adobe_cshow begin
+
+	Adobe_cshow
+
+		{
+
+		dup xcheck
+
+			{
+
+			bind
+
+			} if
+
+		userdict 3 1 roll put
+
+		} forall
+
+	end
+
+	end
+
+	} ifelse
+
+} def
+
+/terminate			% - terminate -
+
+{
+
+} def
+
+/cshow				% proc string cshow -
+
+{
+
+exch
+
+Adobe_cshow_vars
+
+	exch /_cshow
+
+	exch put
+
+	{
+
+	0 0 Adobe_cshow_vars /_cshow get exec
+
+	} forall
+
+} def
+
+currentdict readonly pop end
+
+setpacking
+
+
+
+%%EndResource
+
+%%BeginResource: procset Adobe_customcolor 1.0 0
+
+%%Title: (Custom Color Operators)
+
+%%Version: 1.0 
+
+%%CreationDate: (5/9/88) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+currentpacking true setpacking
+
+userdict /Adobe_customcolor 5 dict dup begin put
+
+/initialize			% - initialize -
+
+{
+
+/setcustomcolor where
+
+	{
+
+	pop
+
+	}
+
+	{
+
+	Adobe_customcolor begin
+
+	Adobe_customcolor
+
+		{
+
+		dup xcheck
+
+			{
+
+			bind
+
+			} if
+
+		pop pop
+
+		} forall
+
+	end
+
+	Adobe_customcolor begin
+
+	} ifelse
+
+} def
+
+/terminate			% - terminate -
+
+{
+
+currentdict Adobe_customcolor eq
+
+	{
+
+	end
+
+	} if
+
+} def
+
+/findcmykcustomcolor	% cyan magenta yellow black name findcmykcustomcolor object
+
+{
+
+5 packedarray
+
+}  def
+
+/setcustomcolor		% object tint setcustomcolor -
+
+{
+
+exch
+
+aload pop pop
+
+4
+
+	{
+
+	4 index mul 4 1 roll
+
+	} repeat
+
+5 -1 roll pop
+
+setcmykcolor
+
+} def
+
+/setoverprint		% boolean setoverprint -
+
+{
+
+pop
+
+} def
+
+currentdict readonly pop end
+
+setpacking
+
+
+
+%%EndResource
+
+%%BeginResource: procset Adobe_typography_AI3 1.0 0
+
+%%Title: (Typography Operators)
+
+%%Version: 1.0 
+
+%%CreationDate:(5/31/90) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+currentpacking true setpacking
+
+userdict /Adobe_typography_AI3 46 dict dup begin put
+
+/initialize			% - initialize -
+
+{
+
+/TZ
+
+ where
+
+	{
+
+	pop
+
+	}
+
+	{
+
+	Adobe_typography_AI3 begin
+
+	Adobe_typography_AI3
+
+		{
+
+		dup xcheck
+
+			{
+
+			bind
+
+			} if
+
+		pop pop
+
+		} forall
+
+	end
+
+	Adobe_typography_AI3 begin
+
+	} ifelse
+
+} def
+
+/terminate			% - terminate -
+
+{
+
+currentdict Adobe_typography_AI3 eq
+
+	{
+
+	end
+
+	} if
+
+} def
+
+
+
+% [ number value stream [ array for encoding modification ] modifyEncoding ==> [ modified array ]
+
+/modifyEncoding
+
+{
+
+	/_tempEncode exch ddef
+
+	
+
+	% pointer for sequential encodings
+
+	/_pntr 0 ddef
+
+	
+
+	{
+
+		% get bottom object
+
+		counttomark -1 roll
+
+
+
+		% is it a mark ?
+
+		dup type dup /marktype eq 		
+
+		{
+
+			% exit
+
+			pop pop exit
+
+		}
+
+		{
+
+			% ... object ... type ....
+
+
+
+			% insert if a nametype
+
+			/nametype eq
+
+			{
+
+				% insert the name at _pntr and increment pointer
+
+				_tempEncode /_pntr dup load dup 3 1 roll 1 add ddef 3 -1 roll
+
+				put
+
+			}
+
+			{
+
+				% reset _pntr if it's a number
+
+				/_pntr exch ddef					
+
+			}
+
+			ifelse
+
+		}
+
+		ifelse
+
+	}
+
+	loop	
+
+	
+
+	% return the modified encoding
+
+	_tempEncode
+
+}
+
+def
+
+
+
+/TE	% Set std platform encoding 	% (encoding pairs) TE -
+
+{
+
+	StandardEncoding 256 array copy modifyEncoding 
+
+	/_nativeEncoding exch def
+
+} def
+
+
+
+% re-define font
+
+% expected arguments
+
+% for 'normal fonts : 
+
+%	[ /_Helvetica-Bold/Helvetica-Bold direction fontScript defaultEncoding TZ
+
+%
+
+% for cartographic, pictographic, and expert fonts :
+
+% 	[ ... number value stream ... /_Helvetica-Bold/Helvetica-Bold 
+
+%	direction fontScript defaultEncoding TZ
+
+/TZ		
+
+{
+
+	% platform dependent coding flag
+
+	/_useNativeEncoding exch def
+
+
+
+	% pop fontScript & direction
+
+	pop pop
+
+	
+
+	% create a new dictionary with length
+
+	% equal to original dictionary length + 2
+
+	% copy all the key/value pairs except FID
+
+	findfont dup length 2 add dict
+
+	
+
+	begin
+
+	
+
+		% copy all the values but the FID
+
+		% into the new dictionary
+
+		mark exch
+
+		{
+
+			1 index /FID ne { def } if cleartomark mark
+
+		}
+
+		forall
+
+		% discard last mark
+
+		pop
+
+		
+
+		% define FontName
+
+		/FontName exch def
+
+		
+
+		% if no re-encoding stream is present
+
+		% then if the base encoding vector of the font
+
+		% is the same as StandardEncoding
+
+		% and the use platform encoding flag is true
+
+		% then install AI platform encoding
+
+		% else leave the base encoding in effect
+
+
+
+		counttomark 0 eq
+
+		{
+
+			Encoding StandardEncoding eq 1 _useNativeEncoding eq and
+
+			{
+
+				/Encoding _nativeEncoding def
+
+			}
+
+			if
+
+			% clean up
+
+			cleartomark
+
+		}
+
+		{	
+
+			% custom encoding to be done
+
+			% start off with a copy of the font's standard encoding
+
+			/Encoding load 256 array copy 
+
+			modifyEncoding /Encoding exch def
+
+		}
+
+		ifelse		
+
+		FontName currentdict
+
+	end
+
+	
+
+	% register the new font
+
+	definefont pop
+
+}
+
+def
+
+
+
+% text painting operators
+
+/tr					% string tr ax ay string 
+
+{
+
+_ax _ay 3 2 roll
+
+} def
+
+/trj				% string trj cx cy fillchar ax ay string 
+
+{
+
+_cx _cy _sp _ax _ay 6 5 roll
+
+} def
+
+
+
+/a0
+
+{
+
+/Tx	% text							% textString Tx -
+
+	{
+
+	dup 
+
+	currentpoint 3 2 roll
+
+	tr _psf
+
+	newpath moveto
+
+	tr _ctm _pss
+
+	} ddef
+
+/Tj	% justified text				% textString Tj -
+
+	{
+
+	dup
+
+	currentpoint 3 2 roll
+
+	trj _pjsf
+
+	newpath moveto
+
+	trj _ctm _pjss
+
+	} ddef
+
+	
+
+} def
+
+/a1
+
+{
+
+W B
+
+} def
+
+
+
+/e0
+
+{
+
+/Tx	% text							% textString Tx -
+
+	{
+
+	tr _psf
+
+	} ddef
+
+/Tj	% justified text				% textString Tj -
+
+	{
+
+	trj _pjsf
+
+	} ddef
+
+} def
+
+
+
+/e1
+
+{
+
+W F 
+
+} def
+
+
+
+
+
+/i0
+
+{
+
+/Tx	% text							% textString Tx -
+
+	{
+
+	tr sp
+
+	} ddef
+
+/Tj	% justified text				% textString Tj -
+
+	{
+
+	trj jsp
+
+	} ddef
+
+} def
+
+
+
+/o0
+
+{
+
+/Tx	% text							% textString Tx -
+
+	{
+
+	tr sw rmoveto
+
+	} ddef
+
+/Tj	% justified text				% textString Tj -
+
+	{
+
+	trj swj rmoveto
+
+	} ddef
+
+} def
+
+
+
+/r0
+
+{
+
+/Tx	% text							% textString Tx -
+
+	{
+
+	tr _ctm _pss
+
+	} ddef
+
+/Tj	% justified text				% textString Tj -
+
+	{
+
+	trj _ctm _pjss
+
+	} ddef
+
+} def
+
+/r1
+
+{
+
+W S
+
+} def
+
+
+
+% font operators
+
+
+
+% Binding
+
+/To	% begin text 					% bindType To -
+
+{
+
+	pop _ctm currentmatrix pop
+
+} def
+
+
+
+/TO	% end text					% TO -
+
+{
+
+	Te _ctm setmatrix newpath
+
+} def
+
+
+
+% Text paths
+
+/Tp	% begin text path				% a b c d tx ty startPt Tp -
+
+{
+
+	pop _tm astore pop _ctm setmatrix 
+
+	2 dict begin /W {} def /h {} def
+
+} def
+
+
+
+/TP	% end text path					% TP -
+
+{
+
+	end
+
+	iTm 0 0 moveto
+
+} def
+
+
+
+% Render mode & matrix operators
+
+/Tr	% begin render					% render Tr - 
+
+{
+
+	Te currentpoint newpath moveto
+
+	dup 8 eq {pop 0} {dup 9 eq {pop 1} if} ifelse
+
+	dup /_render exch ddef
+
+	_renderStart exch get load exec
+
+} def
+
+
+
+/iTm % internal set text matrix		% - iTm -	(uses _tm as implicit argument)
+
+{
+
+_ctm setmatrix _tm concat 0 _rise translate _hs 1 scale
+
+} def
+
+
+
+/Tm % set text matrix				% a b c d tx ty Tm -
+
+{
+
+_tm astore pop iTm 0 0 moveto
+
+} def
+
+
+
+/Td % translate text matrix 		% tx ty Td -
+
+{
+
+_mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto
+
+} def
+
+
+
+/Te	% end render					% - Te -
+
+{
+
+	_render -1 eq {} {_renderEnd _render get dup null ne {load exec} {pop} ifelse} ifelse
+
+	/_render -1 ddef
+
+} def
+
+
+
+
+
+% Attributes
+
+/Ta	% set alignment					% alignment Ta -
+
+{
+
+pop
+
+} def
+
+
+
+/Tf	% set font name and size		% fontname size Tf -
+
+{
+
+dup 1000 div /_fScl exch ddef
+
+exch findfont exch scalefont setfont
+
+} def
+
+
+
+/Tl	% set leading					% leading paragraphLeading Tl -
+
+{
+
+pop
+
+0 exch _leading astore pop
+
+} def
+
+
+
+/Tt	% set user tracking				% userTracking Tt -
+
+{
+
+pop
+
+} def
+
+
+
+/TW % set word spacing				% minSpace optSpace maxSpace TW -
+
+{
+
+3 npop
+
+} def
+
+
+
+/Tw	% set computed word spacing		% wordSpace Tw
+
+{
+
+/_cx exch ddef
+
+} def
+
+
+
+/TC % set character spacing			% minSpace optSpace maxSpace TC -
+
+{
+
+3 npop
+
+} def
+
+
+
+/Tc	% set computed char spacing 	% charSpace Tc -
+
+{
+
+/_ax exch ddef
+
+} def
+
+
+
+/Ts % set super/subscripting (rise)	% rise Ts -
+
+{
+
+/_rise exch ddef
+
+currentpoint
+
+iTm
+
+moveto
+
+} def
+
+
+
+/Ti	% set indentation				% firstStartIndent otherStartIndent stopIndent Ti -
+
+{
+
+3 npop
+
+} def
+
+
+
+/Tz % set horizontal scaling		% scalePercent Tz -
+
+{
+
+100 div /_hs exch ddef
+
+iTm
+
+} def
+
+
+
+/TA % set pairwise kerning			% autoKern TA -
+
+									%	autoKern = 0 -> no pair kerning
+
+									%			 = 1 -> automatic pair kerning
+
+{
+
+pop
+
+} def
+
+
+
+/Tq % set hanging quotes			% hangingQuotes Tq -
+
+									%	hangingQuotes 	= 0 -> no hanging quotes
+
+									%			 		= 1 -> hanging quotes
+
+{
+
+pop
+
+} def
+
+
+
+
+
+% Text Bodies
+
+/TX {pop} def
+
+
+
+%/Tx	% non-justified text			% textString Tx -
+
+%/Tj	% justified text				% textString Tj -
+
+
+
+/Tk	% kern							% autoKern kernValue Tk -
+
+									%  	autoKern = 0 -> manual kern, = 1 -> auto kern
+
+									%	kernValue = kern value in em/1000 space
+
+{
+
+exch pop _fScl mul neg 0 rmoveto
+
+} def
+
+/TK	% non-printing kern				% autoKern kernValue TK -
+
+{
+
+2 npop
+
+} def
+
+
+
+/T* % carriage return & line feed	% - T* -
+
+{
+
+_leading aload pop neg Td
+
+} def
+
+
+
+/T*- % carriage return & negative line feed	% - T*- -
+
+{
+
+_leading aload pop Td
+
+} def
+
+
+
+/T-	% print a discretionary hyphen	% - T- -
+
+{
+
+_hyphen Tx
+
+} def
+
+
+
+/T+	% discretionary hyphen hyphen	% - T+ -
+
+{} def
+
+
+
+/TR	% reset pattern matrix 			% a b c d tx ty TR -
+
+{
+
+_ctm currentmatrix pop 	
+
+_tm astore pop 
+
+iTm 0 0 moveto 
+
+} def
+
+
+
+/TS	% special chars					% textString justified TS -
+
+{
+
+0 eq {Tx} {Tj} ifelse
+
+} def
+
+
+
+currentdict readonly pop end
+
+setpacking
+
+
+
+%%EndResource
+
+%%BeginResource: procset Adobe_pattern_AI3 1.0 0
+
+%%Title: (Adobe Illustrator (R) Version 3.0 Pattern Operators)
+
+%%Version: 1.0 
+
+%%CreationDate: (7/21/89) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+currentpacking true setpacking
+
+userdict /Adobe_pattern_AI3 16 dict dup begin put
+
+/initialize			% - initialize -
+
+{
+
+/definepattern where
+
+	{
+
+	pop
+
+	}
+
+	{
+
+	Adobe_pattern_AI3 begin
+
+	Adobe_pattern_AI3
+
+		{
+
+		dup xcheck
+
+			{
+
+			bind
+
+			} if
+
+		pop pop
+
+		} forall
+
+	mark
+
+	cachestatus 7 1 roll pop pop pop pop exch pop exch
+
+		{
+
+		{
+
+		10000 add
+
+		dup 2 index gt
+
+			{
+
+			break
+
+			} if
+
+		dup setcachelimit
+
+		} loop
+
+		} stopped
+
+	cleartomark
+
+	} ifelse
+
+} def
+
+/terminate			% - terminate -
+
+{
+
+currentdict Adobe_pattern_AI3 eq
+
+	{
+
+	end
+
+	} if
+
+} def
+
+errordict
+
+/nocurrentpoint		% operator nocurrentpoint -
+
+{
+
+pop
+
+stop
+
+} put
+
+errordict
+
+/invalidaccess		% operator invalidaccess -
+
+{
+
+pop
+
+stop
+
+} put
+
+/patternencoding
+
+256 array def
+
+0 1 255
+
+{
+
+patternencoding exch ( ) 2 copy exch 0 exch put cvn put
+
+} for
+
+/definepattern		% width height matrix procarray key cache uniform definepattern font
+
+{
+
+17 dict begin
+
+/uniform exch def
+
+/cache exch def
+
+/key exch def
+
+/procarray exch def
+
+/mtx exch matrix invertmatrix def
+
+/height exch def
+
+/width exch def
+
+/ctm matrix currentmatrix def
+
+/ptm matrix def
+
+/str 32 string def
+
+/slice 9 dict def
+
+slice /s 1 put
+
+slice /q 256 procarray length div sqrt floor cvi put
+
+slice /b 0 put
+
+/FontBBox [0 0 0 0] def
+
+/FontMatrix mtx matrix copy def
+
+/Encoding patternencoding def
+
+/FontType 3 def
+
+/BuildChar		% dict char BuildChar -
+
+	{
+
+	exch
+
+	begin
+
+	slice begin
+
+	dup q dup mul mod s idiv /i exch def
+
+	dup q dup mul mod s mod /j exch def
+
+	q dup mul idiv procarray exch get
+
+	/xl j width s div mul def
+
+	/xg j 1 add width s div mul def
+
+	/yl i height s div mul def
+
+	/yg i 1 add height s div mul def
+
+	uniform
+
+		{
+
+		1 1
+
+		}
+
+		{
+
+		width 0 dtransform
+
+		dup mul exch dup mul add sqrt dup 1 add exch div
+
+		0 height dtransform
+
+		dup mul exch dup mul add sqrt dup 1 add exch div
+
+		} ifelse
+
+	width 0 cache
+
+		{
+
+		xl 4 index mul yl 4 index mul xg 6 index mul yg 6 index mul
+
+		setcachedevice
+
+		}
+
+		{
+
+		setcharwidth
+
+		} ifelse
+
+	gsave
+
+	scale
+
+	newpath
+
+	xl yl moveto
+
+	xg yl lineto
+
+	xg yg lineto
+
+	xl yg lineto
+
+	closepath
+
+	clip
+
+	newpath
+
+	end
+
+	end
+
+	exec
+
+	grestore
+
+	} def
+
+key currentdict definefont
+
+end
+
+} def
+
+/patterncachesize	% - patterncachesize bits
+
+{
+
+gsave
+
+newpath
+
+0 0 moveto
+
+width 0 lineto
+
+width height lineto
+
+0 height lineto
+
+closepath
+
+patternmatrix setmatrix
+
+pathbbox
+
+exch ceiling 4 -1 roll floor sub 3 1 roll
+
+ceiling exch floor sub
+
+mul 1 add
+
+grestore
+
+} def
+
+/patterncachelimit	% - patterncachelimit bits
+
+{
+
+cachestatus 7 1 roll 6 npop 8 mul
+
+} def
+
+/patternpath		% index font matrix patternpath -
+
+{
+
+exch dup begin setfont
+
+ctm setmatrix
+
+concat
+
+slice exch /b exch slice /q get dup mul mul put
+
+FontMatrix concat
+
+uniform
+
+	{
+
+	width 0 dtransform round width div exch round width div exch
+
+	0 height dtransform round height div exch height div exch
+
+	0 0 transform round exch round exch
+
+	ptm astore setmatrix
+
+	}
+
+	{
+
+	ptm currentmatrix pop
+
+	} ifelse
+
+{currentpoint} stopped not
+
+	{
+
+	2 npop
+
+	pathbbox
+
+	true
+
+	4 index 3 index eq
+
+	4 index 3 index eq
+
+	and
+
+		{
+
+		pop false
+
+			{
+
+			{2 npop}
+
+			{3 npop true}
+
+			{7 npop true}
+
+			{pop true}
+
+			pathforall
+
+			} stopped
+
+			{
+
+			5 npop true
+
+			} if
+
+		} if
+
+		{
+
+		height div ceiling height mul 4 1 roll
+
+		width div ceiling width mul 4 1 roll
+
+		height div floor height mul 4 1 roll
+
+		width div floor width mul 4 1 roll
+
+		2 index sub height div ceiling cvi exch
+
+		3 index sub width div ceiling cvi exch
+
+		4 2 roll moveto
+
+		FontMatrix mtx invertmatrix
+
+		dup dup 4 get exch 5 get rmoveto
+
+		ptm ptm concatmatrix pop
+
+		slice /s
+
+		patterncachesize patterncachelimit div ceiling sqrt ceiling cvi
+
+		dup slice /q get gt
+
+			{
+
+			pop slice /q get
+
+			} if
+
+		put
+
+		0 1 slice /s get dup mul 1 sub
+
+			{
+
+			slice /b get add
+
+			gsave
+
+			0 1 str length 1 sub
+
+				{
+
+				str exch 2 index put
+
+				} for
+
+			pop
+
+			dup
+
+				{
+
+				gsave
+
+				ptm setmatrix
+
+				1 index str length idiv {str show} repeat
+
+				1 index str length mod str exch 0 exch getinterval show
+
+				grestore
+
+				0 height rmoveto
+
+				} repeat
+
+			grestore
+
+			} for
+
+		2 npop
+
+		}
+
+		{
+
+		4 npop
+
+		} ifelse
+
+	} if
+
+end
+
+} def
+
+/patternclip		% - patternclip -
+
+{
+
+clip
+
+} def
+
+/patternstrokepath	% - patternstrokepath -
+
+{
+
+strokepath
+
+} def
+
+/patternmatrix		% - patternmatrix matrix
+
+matrix def
+
+/patternfill		% index font patternfill -
+
+					% index font matrix patternfill -
+
+{
+
+dup type /dicttype eq
+
+	{
+
+	Adobe_pattern_AI3 /patternmatrix get
+
+	} if
+
+gsave
+
+patternclip
+
+Adobe_pattern_AI3 /patternpath get exec
+
+grestore
+
+newpath
+
+} def
+
+/patternstroke		% index font patternstroke -
+
+					% index font matrix patternstroke -
+
+{
+
+dup type /dicttype eq
+
+	{
+
+	Adobe_pattern_AI3 /patternmatrix get
+
+	} if
+
+gsave
+
+patternstrokepath
+
+true
+
+	{
+
+		{
+
+			{
+
+			newpath 
+
+			moveto
+
+			}
+
+			{
+
+			lineto
+
+			}
+
+			{
+
+			curveto
+
+			}
+
+			{
+
+			closepath
+
+			3 copy
+
+			Adobe_pattern_AI3 /patternfill get exec
+
+			} pathforall
+
+		3 npop
+
+		} stopped
+
+			{
+
+			5 npop
+
+			patternclip
+
+			Adobe_pattern_AI3 /patternfill get exec
+
+			} if
+
+	}
+
+	{
+
+	patternclip
+
+	Adobe_pattern_AI3 /patternfill get exec
+
+	} ifelse
+
+grestore
+
+newpath
+
+} def
+
+/patternashow		% index font ax ay string patternashow -
+
+					% index font matrix ax ay string patternashow -
+
+{
+
+3 index type /dicttype eq
+
+	{
+
+	Adobe_pattern_AI3 /patternmatrix get 4 1 roll
+
+	} if
+
+	{
+
+	2 npop (0) exch
+
+	2 copy 0 exch put pop
+
+	gsave
+
+	false charpath currentpoint
+
+	6 index 6 index 6 index
+
+	Adobe_pattern_AI3 /patternfill get exec
+
+	grestore
+
+	newpath moveto
+
+	2 copy rmoveto
+
+	} exch cshow
+
+5 npop
+
+} def
+
+/patternawidthshow		% index font cx cy char ax ay string patternawidthshow -
+
+						% index font matrix cx cy char ax ay string patternawidthshow -
+
+{
+
+6 index type /dicttype eq
+
+	{
+
+	Adobe_pattern_AI3 /patternmatrix get 7 1 roll
+
+	} if
+
+	{
+
+	2 npop (0) exch
+
+	2 copy 0 exch put 
+
+	gsave
+
+	_sp eq {5 index 5 index rmoveto} if
+
+	false charpath currentpoint
+
+	9 index 9 index 9 index
+
+	Adobe_pattern_AI3 /patternfill get exec
+
+	grestore
+
+	newpath moveto
+
+	2 copy rmoveto
+
+	} exch cshow
+
+8 npop
+
+} def
+
+/patternashowstroke	% index font ax ay string matrix patternashowstroke
+
+					% index font matrix ax ay string matrix patternashowstroke
+
+{
+
+4 index type /dicttype eq
+
+	{
+
+	patternmatrix /patternmatrix get 5 1 roll
+
+	} if
+
+4 1 roll
+
+	{
+
+	2 npop (0) exch
+
+	2 copy 0 exch put pop
+
+	gsave
+
+	false charpath
+
+	currentpoint
+
+	4 index setmatrix
+
+	7 index 7 index 7 index
+
+	Adobe_pattern_AI3 /patternstroke get exec
+
+	grestore
+
+	newpath moveto
+
+	2 copy rmoveto
+
+	} exch cshow
+
+6 npop
+
+} def
+
+/patternawidthshowstroke	% index font cx cy char ax ay string matrix patternashowstroke
+
+					% index font matrix cx cy char ax ay string matrix patternashowstroke
+
+{
+
+7 index type /dicttype eq
+
+	{
+
+	patternmatrix /patternmatrix get 8 1 roll
+
+	} if
+
+7 1 roll
+
+	{
+
+	2 npop (0) exch
+
+	2 copy 0 exch put
+
+	gsave
+
+	_sp eq {5 index 5 index rmoveto} if
+
+	false charpath currentpoint
+
+	7 index setmatrix
+
+	10 index 10 index 10 index
+
+	Adobe_pattern_AI3 /patternstroke get exec
+
+	grestore
+
+	newpath moveto
+
+	2 copy rmoveto
+
+	} exch cshow
+
+9 npop
+
+} def
+
+currentdict readonly pop end
+
+setpacking
+
+
+
+%%EndResource
+
+%%BeginResource: procset Adobe_Illustrator_AI3 1.0 0
+
+%%Title: (Adobe Illustrator (R) Version 3.0 Full Prolog)
+
+%%Version: 1.0 
+
+%%CreationDate: (7/22/89) ()
+
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+
+
+currentpacking true setpacking
+
+userdict /Adobe_Illustrator_AI3 71 dict dup begin put
+
+% initialization
+
+/initialize				% - initialize -
+
+{
+
+userdict /Adobe_Illustrator_AI3_vars 55 dict dup begin put
+
+
+
+% paint operands
+
+/_lp /none def
+
+/_pf {} def		% paint fill
+
+/_ps {} def		% paint stroke
+
+/_psf {} def	% paint string fill
+
+/_pss {} def	% paint string stroke
+
+/_pjsf {} def	% paint justified string fill
+
+/_pjss {} def	% paint justified string stroke
+
+/_pola 0 def
+
+/_doClip 0 def
+
+
+
+% paint operators
+
+/cf	currentflat def	% - cf flatness
+
+
+
+% typography operands
+
+/_tm matrix def
+
+/_renderStart [/e0 /r0 /a0 /o0 /i0 /i0 /i0 /i0] def 
+
+/_renderEnd [null null null null /e1 /r1 /a1 /clip] def
+
+/_render -1 def
+
+/_rise 0 def
+
+/_ax 0 def			% x character spacing	(_ax, _ay, _cx, _cy follows awidthshow naming convention)
+
+/_ay 0 def			% y character spacing
+
+/_cx 0 def			% x word spacing
+
+/_cy 0 def			% y word spacing
+
+/_leading [0 0] def
+
+/_ctm matrix def
+
+/_mtx matrix def
+
+/_sp 16#020 def
+
+/_hyphen (-) def
+
+/_fScl 0 def
+
+/_cnt 0 def
+
+/_hs 1 def
+
+/_nativeEncoding 0 def
+
+/_useNativeEncoding 0 def
+
+/_tempEncode 0 def
+
+/_pntr 0 def
+
+
+
+% typography operators
+
+/Tx {} def
+
+/Tj {} def
+
+
+
+% compound path operators
+
+/CRender {} def
+
+
+
+% printing
+
+/_AI3_savepage {} def
+
+
+
+% color operands
+
+/_gf null def
+
+/_cf 4 array def
+
+/_if null def
+
+/_of false def
+
+/_fc {} def
+
+/_gs null def
+
+/_cs 4 array def
+
+/_is null def
+
+/_os false def
+
+/_sc {} def
+
+
+
+% pattern operands
+
+/_pd 1 dict def
+
+/_ed 15 dict def
+
+/_pm matrix def
+
+/_fm null def
+
+/_fd null def
+
+/_fdd null def
+
+/_sm null def
+
+/_sd null def
+
+/_sdd null def
+
+/_i null def
+
+Adobe_Illustrator_AI3 begin
+
+Adobe_Illustrator_AI3 dup /nc get begin
+
+	{
+
+	dup xcheck
+
+		{
+
+		bind
+
+		} if
+
+	pop pop
+
+	} forall
+
+end
+
+end
+
+end
+
+Adobe_Illustrator_AI3 begin
+
+Adobe_Illustrator_AI3_vars begin
+
+newpath
+
+} def
+
+/terminate				% - terminate -
+
+{
+
+end
+
+end
+
+} def
+
+
+
+% definition operators
+
+/_					% - _ null
+
+null def
+
+/ddef				% key value ddef -
+
+{
+
+Adobe_Illustrator_AI3_vars 3 1 roll put
+
+} def
+
+/xput				% key value literal xput -
+
+{
+
+dup load dup length exch maxlength eq
+
+	{
+
+	dup dup load dup
+
+	length 2 mul dict copy def
+
+	} if
+
+load begin def end
+
+} def
+
+/npop				% integer npop -
+
+{
+
+	{
+
+	pop
+
+	} repeat
+
+} def
+
+
+
+% marking operators
+
+/sw					% ax ay string sw x y
+
+{
+
+dup length exch stringwidth
+
+exch 5 -1 roll 3 index 1 sub mul add
+
+4 1 roll 3 1 roll 1 sub mul add
+
+} def
+
+/swj				% cx cy fillchar ax ay string swj x y
+
+{
+
+dup 4 1 roll
+
+dup length exch stringwidth 
+
+exch 5 -1 roll 3 index 1 sub mul add
+
+4 1 roll 3 1 roll 1 sub mul add 
+
+6 2 roll /_cnt 0 ddef
+
+{1 index eq {/_cnt _cnt 1 add ddef} if} forall pop
+
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+
+} def
+
+/ss					% ax ay string matrix ss -
+
+{
+
+4 1 roll
+
+	{				% matrix ax ay char 0 0 {proc} -
+
+	2 npop 
+
+	(0) exch 2 copy 0 exch put pop
+
+	gsave
+
+	false charpath currentpoint
+
+	4 index setmatrix
+
+	stroke
+
+	grestore
+
+	moveto
+
+	2 copy rmoveto
+
+	} exch cshow
+
+3 npop
+
+} def
+
+/jss				% cx cy fillchar ax ay string matrix jss -
+
+{
+
+4 1 roll
+
+	{				% cx cy fillchar matrix ax ay char 0 0 {proc} -   
+
+	2 npop 
+
+	(0) exch 2 copy 0 exch put 
+
+	gsave
+
+	_sp eq 
+
+		{
+
+		exch 6 index 6 index 6 index 5 -1 roll widthshow  
+
+		currentpoint
+
+		}
+
+		{
+
+		false charpath currentpoint
+
+		4 index setmatrix stroke
+
+		}ifelse
+
+	grestore
+
+	moveto
+
+	2 copy rmoveto
+
+	} exch cshow
+
+6 npop
+
+} def
+
+
+
+% path operators
+
+/sp					% ax ay string sp -
+
+{
+
+	{
+
+	2 npop (0) exch
+
+	2 copy 0 exch put pop
+
+	false charpath
+
+	2 copy rmoveto
+
+	} exch cshow
+
+2 npop
+
+} def
+
+/jsp					% cx cy fillchar ax ay string jsp -
+
+{
+
+	{					% cx cy fillchar ax ay char 0 0 {proc} -
+
+	2 npop 
+
+	(0) exch 2 copy 0 exch put 
+
+	_sp eq 
+
+		{
+
+		exch 5 index 5 index 5 index 5 -1 roll widthshow  
+
+		}
+
+		{
+
+		false charpath
+
+		}ifelse
+
+	2 copy rmoveto
+
+	} exch cshow
+
+5 npop
+
+} def
+
+
+
+% path construction operators
+
+/pl					% x y pl x y
+
+{
+
+transform
+
+0.25 sub round 0.25 add exch
+
+0.25 sub round 0.25 add exch
+
+itransform
+
+} def
+
+/setstrokeadjust where
+
+	{
+
+	pop true setstrokeadjust
+
+	/c				% x1 y1 x2 y2 x3 y3 c -
+
+	{
+
+	curveto
+
+	} def
+
+	/C
+
+	/c load def
+
+	/v				% x2 y2 x3 y3 v -
+
+	{
+
+	currentpoint 6 2 roll curveto
+
+	} def
+
+	/V
+
+	/v load def
+
+	/y				% x1 y1 x2 y2 y -
+
+	{
+
+	2 copy curveto
+
+	} def
+
+	/Y
+
+	/y load def
+
+	/l				% x y l -
+
+	{
+
+	lineto
+
+	} def
+
+	/L
+
+	/l load def
+
+	/m				% x y m -
+
+	{
+
+	moveto
+
+	} def
+
+	}
+
+	{
+
+	/c
+
+	{
+
+	pl curveto
+
+	} def
+
+	/C
+
+	/c load def
+
+	/v
+
+	{
+
+	currentpoint 6 2 roll pl curveto
+
+	} def
+
+	/V
+
+	/v load def
+
+	/y
+
+	{
+
+	pl 2 copy curveto
+
+	} def
+
+	/Y
+
+	/y load def
+
+	/l
+
+	{
+
+	pl lineto
+
+	} def
+
+	/L
+
+	/l load def
+
+	/m
+
+	{
+
+	pl moveto
+
+	} def
+
+	} ifelse
+
+
+
+% graphic state operators
+
+/d					% array phase d -
+
+{
+
+setdash
+
+} def
+
+/cf	{} def			% - cf flatness
+
+/i					% flatness i -
+
+{
+
+dup 0 eq
+
+	{
+
+	pop cf
+
+	} if
+
+setflat
+
+} def
+
+/j					% linejoin j -
+
+{
+
+setlinejoin
+
+} def
+
+/J					% linecap J -
+
+{
+
+setlinecap
+
+} def
+
+/M					% miterlimit M -
+
+{
+
+setmiterlimit
+
+} def
+
+/w					% linewidth w -
+
+{
+
+setlinewidth
+
+} def
+
+
+
+% path painting operators
+
+/H					% - H -
+
+{} def
+
+/h					% - h -
+
+{
+
+closepath
+
+} def
+
+/N					% - N -
+
+{
+
+_pola 0 eq 
+
+	{
+
+	_doClip 1 eq {clip /_doClip 0 ddef} if 
+
+	newpath
+
+	} 
+
+	{
+
+	/CRender {N} ddef
+
+	}ifelse
+
+} def
+
+/n					% - n -
+
+{N} def
+
+/F					% - F -
+
+{
+
+_pola 0 eq 
+
+	{
+
+	_doClip 1 eq 
+
+		{
+
+		gsave _pf grestore clip newpath /_lp /none ddef _fc 
+
+		/_doClip 0 ddef
+
+		}
+
+		{
+
+		_pf
+
+		}ifelse
+
+	} 
+
+	{
+
+	/CRender {F} ddef
+
+	}ifelse
+
+} def
+
+/f					% - f -
+
+{
+
+closepath
+
+F
+
+} def
+
+/S					% - S -
+
+{
+
+_pola 0 eq 
+
+	{
+
+	_doClip 1 eq 
+
+		{
+
+		gsave _ps grestore clip newpath /_lp /none ddef _sc 
+
+		/_doClip 0 ddef
+
+		}
+
+		{
+
+		_ps
+
+		}ifelse
+
+	} 
+
+	{
+
+	/CRender {S} ddef
+
+	}ifelse
+
+} def
+
+/s					% - s -
+
+{
+
+closepath
+
+S
+
+} def
+
+/B					% - B -
+
+{
+
+_pola 0 eq 
+
+	{
+
+	_doClip 1 eq 	% F clears _doClip
+
+	gsave F grestore 
+
+		{
+
+		gsave S grestore clip newpath /_lp /none ddef _sc
+
+		/_doClip 0 ddef
+
+		} 
+
+		{
+
+		S
+
+		}ifelse
+
+	}
+
+	{
+
+	/CRender {B} ddef
+
+	}ifelse
+
+} def
+
+/b					% - b -
+
+{
+
+closepath
+
+B
+
+} def
+
+/W					% - W -
+
+{
+
+/_doClip 1 ddef
+
+} def
+
+/*					% - [string] * -
+
+{
+
+count 0 ne 
+
+	{
+
+	dup type (stringtype) eq {pop} if
+
+	} if 
+
+_pola 0 eq {newpath} if
+
+} def
+
+
+
+% group operators
+
+/u					% - u -
+
+{} def
+
+/U					% - U -
+
+{} def
+
+/q					% - q -
+
+{
+
+_pola 0 eq {gsave} if
+
+} def
+
+/Q					% - Q -
+
+{
+
+_pola 0 eq {grestore} if
+
+} def
+
+/*u					% - *u -
+
+{
+
+_pola 1 add /_pola exch ddef
+
+} def
+
+/*U					% - *U -
+
+{
+
+_pola 1 sub /_pola exch ddef 
+
+_pola 0 eq {CRender} if
+
+} def
+
+/D					% polarized D -
+
+{pop} def
+
+/*w					% - *w -
+
+{} def
+
+/*W					% - *W -
+
+{} def
+
+
+
+% place operators
+
+/`					% matrix llx lly urx ury string ` -
+
+{
+
+/_i save ddef
+
+6 1 roll 4 npop
+
+concat
+
+userdict begin
+
+/showpage {} def
+
+false setoverprint
+
+pop
+
+} def
+
+/~					% - ~ -
+
+{
+
+end
+
+_i restore
+
+} def
+
+
+
+% pattern operators
+
+/@					% - @ -
+
+{} def
+
+/&					% - & -
+
+{} def
+
+
+
+% color operators
+
+/O					% flag O -
+
+{
+
+0 ne
+
+/_of exch ddef
+
+/_lp /none ddef
+
+} def
+
+/R					% flag R -
+
+{
+
+0 ne
+
+/_os exch ddef
+
+/_lp /none ddef
+
+} def
+
+/g					% gray g -
+
+{
+
+/_gf exch ddef
+
+/_fc
+
+{
+
+_lp /fill ne
+
+	{
+
+	_of setoverprint
+
+	_gf setgray
+
+	/_lp /fill ddef
+
+	} if
+
+} ddef
+
+/_pf
+
+{
+
+_fc
+
+fill
+
+} ddef
+
+/_psf
+
+{
+
+_fc
+
+ashow
+
+} ddef
+
+/_pjsf
+
+{
+
+_fc
+
+awidthshow
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+/G					% gray G -
+
+{
+
+/_gs exch ddef
+
+/_sc
+
+{
+
+_lp /stroke ne
+
+	{
+
+	_os setoverprint
+
+	_gs setgray
+
+	/_lp /stroke ddef
+
+	} if
+
+} ddef
+
+/_ps
+
+{
+
+_sc
+
+stroke
+
+} ddef
+
+/_pss
+
+{
+
+_sc
+
+ss
+
+} ddef
+
+/_pjss
+
+{
+
+_sc
+
+jss
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+/k					% cyan magenta yellow black k -
+
+{
+
+_cf astore pop
+
+/_fc
+
+{
+
+_lp /fill ne
+
+	{
+
+	_of setoverprint
+
+	_cf aload pop setcmykcolor
+
+	/_lp /fill ddef
+
+	} if
+
+} ddef
+
+/_pf
+
+{
+
+_fc
+
+fill
+
+} ddef
+
+/_psf
+
+{
+
+_fc
+
+ashow
+
+} ddef
+
+/_pjsf
+
+{
+
+_fc
+
+awidthshow
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+/K					% cyan magenta yellow black K -
+
+{
+
+_cs astore pop
+
+/_sc
+
+{
+
+_lp /stroke ne
+
+	{
+
+	_os setoverprint
+
+	_cs aload pop setcmykcolor
+
+	/_lp /stroke ddef
+
+	} if
+
+} ddef
+
+/_ps
+
+{
+
+_sc
+
+stroke
+
+} ddef
+
+/_pss
+
+{
+
+_sc
+
+ss
+
+} ddef
+
+/_pjss
+
+{
+
+_sc
+
+jss
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+/x					% cyan magenta yellow black name gray x -
+
+{
+
+/_gf exch ddef
+
+findcmykcustomcolor
+
+/_if exch ddef
+
+/_fc
+
+{
+
+_lp /fill ne
+
+	{
+
+	_of setoverprint
+
+	_if _gf 1 exch sub setcustomcolor
+
+	/_lp /fill ddef
+
+	} if
+
+} ddef
+
+/_pf
+
+{
+
+_fc
+
+fill
+
+} ddef
+
+/_psf
+
+{
+
+_fc
+
+ashow
+
+} ddef
+
+/_pjsf
+
+{
+
+_fc
+
+awidthshow
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+/X					% cyan magenta yellow black name gray X -
+
+{
+
+/_gs exch ddef
+
+findcmykcustomcolor
+
+/_is exch ddef
+
+/_sc
+
+{
+
+_lp /stroke ne
+
+	{
+
+	_os setoverprint
+
+	_is _gs 1 exch sub setcustomcolor
+
+	/_lp /stroke ddef
+
+	} if
+
+} ddef
+
+/_ps
+
+{
+
+_sc
+
+stroke
+
+} ddef
+
+/_pss
+
+{
+
+_sc
+
+ss
+
+} ddef
+
+/_pjss
+
+{
+
+_sc
+
+jss
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+% pattern operators
+
+/dp					% width height matrix proc key cache uniform dp [index key]
+
+					% null dp -
+
+{
+
+dup null eq
+
+{
+
+pop
+
+_dp 0 ne
+
+	{
+
+	0 1 _dp 1 sub _dl mod
+
+		{
+
+		_da exch get 3 get
+
+		} for
+
+	_dp 1 sub _dl mod 1 add packedarray
+
+	_da 0 get aload pop 8 -1 roll 5 -1 roll pop 4 1 roll
+
+	definepattern pop
+
+	} if
+
+}
+
+{
+
+_dp 0 ne _dp _dl mod 0 eq and
+
+	{
+
+	null dp
+
+	} if
+
+7 packedarray _da exch _dp _dl mod exch put
+
+_dp _dl mod _da 0 get 4 get 2 packedarray
+
+/_dp _dp 1 add def
+
+} ifelse
+
+} def
+
+/E					% name llx lly urx ury desc E -
+
+{
+
+_ed begin
+
+dup 0 get type /arraytype ne
+
+	{
+
+	0
+
+		{
+
+		dup 1 add index type /arraytype eq
+
+			{
+
+			1 add
+
+			}
+
+			{
+
+			exit
+
+			} ifelse
+
+		} loop
+
+	array astore
+
+	} if
+
+/_dd exch def
+
+/_ury exch def
+
+/_urx exch def
+
+/_lly exch def
+
+/_llx exch def
+
+/_n exch def
+
+/_y 0 def
+
+/_dl 4 def
+
+/_dp 0 def
+
+/_da _dl array def
+
+0 1 _dd length 1 sub
+
+	{
+
+	/_d exch _dd exch get def
+
+	0 2 _d length 2 sub
+
+		{
+
+		/_x exch def
+
+		/_c _d _x get _ ne def
+
+		/_r _d _x 1 add get cvlit def
+
+		_r _ ne
+
+			{
+
+			_urx _llx sub _ury _lly sub [1 0 0 1 0 0] 
+
+				[
+
+				/save cvx
+
+				_llx neg _lly neg /translate cvx
+
+				_c
+
+					{
+
+					nc /begin cvx
+
+					} if
+
+				_r dup type /stringtype eq
+
+					{
+
+					cvx
+
+					}
+
+					{
+
+					{exec} /forall cvx
+
+					} ifelse
+
+				_c
+
+					{
+
+					/end cvx
+
+					} if
+
+				/restore cvx
+
+				] cvx
+
+			/_fn 12 _n length add string def
+
+			_y _fn cvs pop
+
+			/_y _y 1 add def
+
+			_fn 12 _n putinterval
+
+			_fn _c false dp
+
+			_d exch _x 1 add exch put
+
+			} if
+
+		} for
+
+	} for
+
+null dp
+
+_n _dd /_pd
+
+end xput
+
+} def
+
+/fc
+
+{
+
+_fm dup concatmatrix pop
+
+} def
+
+/p					% name px py sx sy a rf r k ka matrix p -
+
+{
+
+/_fm exch ddef
+
+9 -2 roll _pm translate fc
+
+7 -2 roll _pm scale fc
+
+5 -1 roll _pm rotate fc
+
+4 -2 roll exch 0 ne
+
+	{
+
+	dup _pm rotate fc
+
+	1 -1 _pm scale fc
+
+	neg _pm rotate fc
+
+	}
+
+	{
+
+	pop
+
+	} ifelse
+
+dup _pm rotate fc
+
+exch dup sin exch cos div 1 0 0 1 0 6 2 roll
+
+_pm astore fc
+
+neg _pm rotate fc
+
+_pd exch get /_fdd exch ddef
+
+/_pf
+
+{
+
+save
+
+0 1 _fdd length 1 sub
+
+	{
+
+	/_fd exch _fdd exch get ddef
+
+	_fd
+
+	0 2 _fd length 2 sub
+
+		{
+
+		gsave
+
+		2 copy get dup _ ne
+
+			{
+
+			cvx exec _fc
+
+			}
+
+			{
+
+			pop
+
+			} ifelse
+
+		2 copy 1 add get dup _ ne
+
+			{
+
+			aload pop findfont _fm
+
+			patternfill
+
+			}
+
+			{
+
+			pop
+
+			fill
+
+			} ifelse
+
+		grestore
+
+		pop
+
+		} for
+
+	pop
+
+	} for
+
+restore
+
+newpath
+
+} ddef
+
+/_psf		% ax ay string _psf -
+
+{
+
+save
+
+0 1 _fdd length 1 sub
+
+	{
+
+	/_fd exch _fdd exch get ddef
+
+	_fd
+
+	0 2 _fd length 2 sub
+
+		{
+
+		gsave
+
+		2 copy get dup _ ne
+
+			{
+
+			cvx exec _fc
+
+			}
+
+			{
+
+			pop
+
+			} ifelse
+
+		2 copy 1 add get dup _ ne
+
+			{
+
+			aload pop findfont _fm
+
+			9 copy 6 npop patternashow
+
+			}
+
+			{
+
+			pop
+
+			6 copy 3 npop ashow
+
+			} ifelse
+
+		grestore
+
+		pop
+
+		} for
+
+	pop
+
+	} for
+
+restore
+
+%3 npop newpath
+
+sw rmoveto
+
+} ddef
+
+/_pjsf		% cx cy char ax ay string _pjsf
+
+{
+
+save
+
+0 1 _fdd length 1 sub
+
+	{
+
+	/_fd exch _fdd exch get ddef
+
+	_fd
+
+	0 2 _fd length 2 sub
+
+		{
+
+		gsave
+
+		2 copy get dup _ ne
+
+			{
+
+			cvx exec _fc
+
+			}
+
+			{
+
+			pop
+
+			} ifelse
+
+		2 copy 1 add get dup _ ne
+
+			{
+
+			aload pop findfont _fm
+
+			12 copy 6 npop patternawidthshow
+
+			}
+
+			{
+
+			pop 9 copy 3 npop awidthshow
+
+			} ifelse
+
+		grestore
+
+		pop
+
+		} for
+
+	pop
+
+	} for
+
+restore
+
+swj rmoveto
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+/sc
+
+{
+
+_sm dup concatmatrix pop
+
+} def
+
+/P					% name px py sx sy a rf r k ka matrix P -
+
+{
+
+/_sm exch ddef
+
+9 -2 roll _pm translate sc
+
+7 -2 roll _pm scale sc
+
+5 -1 roll _pm rotate sc
+
+4 -2 roll exch 0 ne
+
+	{
+
+	dup _pm rotate sc
+
+	1 -1 _pm scale sc
+
+	neg _pm rotate sc
+
+	}
+
+	{
+
+	pop
+
+	} ifelse
+
+dup _pm rotate sc
+
+exch dup sin exch cos div 1 0 0 1 0 6 2 roll
+
+_pm astore sc
+
+neg _pm rotate sc
+
+_pd exch get /_sdd exch ddef
+
+/_ps
+
+{
+
+save
+
+0 1 _sdd length 1 sub
+
+	{
+
+	/_sd exch _sdd exch get ddef
+
+	_sd
+
+	0 2 _sd length 2 sub
+
+		{
+
+		gsave
+
+		2 copy get dup _ ne
+
+			{
+
+			cvx exec _sc
+
+			}
+
+			{
+
+			pop
+
+			} ifelse
+
+		2 copy 1 add get dup _ ne
+
+			{
+
+			aload pop findfont _sm
+
+			patternstroke
+
+			}
+
+			{
+
+			pop stroke
+
+			} ifelse
+
+		grestore
+
+		pop
+
+		} for
+
+	pop
+
+	} for
+
+restore
+
+newpath
+
+} ddef
+
+/_pss
+
+{
+
+save
+
+0 1 _sdd length 1 sub
+
+	{
+
+	/_sd exch _sdd exch get ddef
+
+	_sd
+
+	0 2 _sd length 2 sub
+
+		{
+
+		gsave
+
+		2 copy get dup _ ne
+
+			{
+
+			cvx exec _sc
+
+			}
+
+			{
+
+			pop
+
+			} ifelse
+
+		2 copy 1 add get dup _ ne
+
+			{
+
+			aload pop findfont _sm
+
+			10 copy 6 npop patternashowstroke
+
+			}
+
+			{
+
+			pop 7 copy 3 npop ss
+
+			} ifelse
+
+		grestore
+
+		pop
+
+		} for
+
+	pop
+
+	} for
+
+restore
+
+pop sw rmoveto
+
+} ddef
+
+/_pjss
+
+{
+
+save
+
+0 1 _sdd length 1 sub
+
+	{
+
+	/_sd exch _sdd exch get ddef
+
+	_sd
+
+	0 2 _sd length 2 sub
+
+		{
+
+		gsave
+
+		2 copy get dup _ ne
+
+			{
+
+			cvx exec _sc
+
+			}
+
+			{
+
+			pop
+
+			} ifelse
+
+		2 copy 1 add get dup _ ne
+
+			{
+
+			aload pop findfont _sm
+
+			13 copy 6 npop patternawidthshowstroke
+
+			}
+
+			{
+
+			pop 10 copy 3 npop jss
+
+			} ifelse
+
+		grestore
+
+		pop
+
+		} for
+
+	pop
+
+	} for
+
+restore
+
+pop swj rmoveto
+
+} ddef
+
+/_lp /none ddef
+
+} def
+
+
+
+% locked object operator
+
+/A					% value A -
+
+{
+
+pop
+
+} def
+
+
+
+% null color operators
+
+/nc 3 dict def
+
+nc begin
+
+/setgray			% gray setgray -
+
+{
+
+pop
+
+} bind def
+
+/setcmykcolor		% cyan magenta yellow black setcmykcolor -
+
+{
+
+4 npop
+
+} bind def
+
+/setcustomcolor		% object tint setcustomcolor -
+
+{
+
+2 npop
+
+} bind def
+
+currentdict readonly pop end
+
+currentdict readonly pop end
+
+setpacking
+
+
+
+% annotate page operator
+
+/annotatepage
+
+{
+
+} def
+
+
+
+%%EndResource
+
+%AI3-Grid.0 18 18 3 0.833333 0.833333 0.833333 3
+
+%%EndProlog
+
+%%BeginSetup
+
+%%IncludeFont: Univers-Oblique
+
+%%IncludeFont: Univers-Light
+
+%%IncludeFont: Univers
+
+%%IncludeFont: Souvenir-Medium
+
+%%IncludeFont: Helvetica
+
+Adobe_cmykcolor /initialize get exec
+
+Adobe_cshow /initialize get exec
+
+Adobe_customcolor /initialize get exec
+
+Adobe_typography_AI3 /initialize get exec
+
+Adobe_pattern_AI3 /initialize get exec
+
+Adobe_Illustrator_AI3 /initialize get exec
+
+[
+
+39/quotesingle 96/grave 130/quotesinglbase 131/florin 132/quotedblbase
+
+133/ellipsis 134/dagger 135/daggerdbl 136/circumflex 137/perthousand 
+
+138/Scaron 139/guilsinglleft 140/OE 145/quoteleft 146/quoteright 
+
+147/quotedblleft 148/quotedblright 149/bullet 150/endash 151/emdash 
+
+152/tilde 153/trademark 154/scaron 155/guilsinglright 156/oe 157/dotlessi 
+
+159/Ydieresis 164/currency 166/brokenbar 168/dieresis 169/copyright 
+
+170/ordfeminine 172/logicalnot 174/registered 175/macron 176/ring 
+
+177/plusminus 178/twosuperior 179/threesuperior 180/acute 181/mu 
+
+183/periodcentered 184/cedilla 185/onesuperior 186/ordmasculine 
+
+188/onequarter 189/onehalf 190/threequarters 192/Agrave 193/Aacute 
+
+194/Acircumflex 195/Atilde 196/Adieresis 197/Aring 198/AE 199/Ccedilla 
+
+200/Egrave 201/Eacute 202/Ecircumflex 203/Edieresis 204/Igrave 205/Iacute 
+
+206/Icircumflex 207/Idieresis 208/Eth 209/Ntilde 210/Ograve 211/Oacute 
+
+212/Ocircumflex 213/Otilde 214/Odieresis 215/multiply 216/Oslash 
+
+217/Ugrave 218/Uacute 219/Ucircumflex 220/Udieresis 221/Yacute 222/Thorn 
+
+223/germandbls 224/agrave 225/aacute 226/acircumflex 227/atilde 228/adieresis 
+
+229/aring 230/ae 231/ccedilla 232/egrave 233/eacute 234/ecircumflex 
+
+235/edieresis 236/igrave 237/iacute 238/icircumflex 239/idieresis 
+
+240/eth 241/ntilde 242/ograve 243/oacute 244/ocircumflex 245/otilde 
+
+246/odieresis 247/divide 248/oslash 249/ugrave 250/uacute 251/ucircumflex 
+
+252/udieresis 253/yacute 254/thorn 255/ydieresis
+
+TE
+
+%AI3_BeginEncoding: _Univers-Oblique Univers-Oblique
+
+[/_Univers-Oblique/Univers-Oblique 0 0 0 TZ
+%AI3_EndEncoding
+%AI3_BeginEncoding: _Univers-Light Univers-Light
+
+[/_Univers-Light/Univers-Light 0 0 0 TZ
+%AI3_EndEncoding
+%AI3_BeginEncoding: _Univers Univers
+
+[/_Univers/Univers 0 0 0 TZ
+%AI3_EndEncoding
+%AI3_BeginEncoding: _Souvenir-Medium Souvenir-Medium
+
+[/_Souvenir-Medium/Souvenir-Medium 0 0 0 TZ
+%AI3_EndEncoding
+%AI3_BeginEncoding: _Helvetica Helvetica
+
+[/_Helvetica/Helvetica 0 0 1 TZ
+%AI3_EndEncoding
+%AI3_BeginPattern: (Yellow Stripe)
+
+(Yellow Stripe) 8.4499 4.6 80.4499 76.6 [
+
+%AI3_Tile
+
+(0 O 0 R 0 0.4 1 0 k 0 0.4 1 0 K) @
+
+(
+
+0 i 0 J 0 j 3.6 w 4 M []0 d
+
+%AI3_Note:
+
+0 D
+
+8.1999 8.1999 m
+
+80.6999 8.1999 L
+
+S
+
+8.1999 22.6 m
+
+80.6999 22.6 L
+
+S
+
+8.1999 37.0001 m
+
+80.6999 37.0001 L
+
+S
+
+8.1999 51.3999 m
+
+80.6999 51.3999 L
+
+S
+
+8.1999 65.8 m
+
+80.6999 65.8 L
+
+S
+
+8.1999 15.3999 m
+
+80.6999 15.3999 L
+
+S
+
+8.1999 29.8 m
+
+80.6999 29.8 L
+
+S
+
+8.1999 44.1999 m
+
+80.6999 44.1999 L
+
+S
+
+8.1999 58.6 m
+
+80.6999 58.6 L
+
+S
+
+8.1999 73.0001 m
+
+80.6999 73.0001 L
+
+S
+
+) &
+
+] E
+
+%AI3_EndPattern
+
+%%EndSetup
+
+0 A
+
+0 i 0 J 0 j 1 w 4 M []0 d
+
+%AI3_Note:
+
+0 D
+
+-49.5 4065.4375 m
+
+-49.5 -4574.5625 L
+
+(N) *
+
+-33.25 4065.4375 m
+
+-33.25 -4574.5625 L
+
+(N) *
+
+31.5 4065.4375 m
+
+31.5 -4574.5625 L
+
+(N) *
+
+50.25 4065.4375 m
+
+50.25 -4574.5625 L
+
+(N) *
+
+157.5 4065.4375 m
+
+157.5 -4574.5625 L
+
+(N) *
+
+0 To
+
+1 0 0 1 -19.0625 41.3542 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+/_Helvetica 10 Tf
+
+0 Ts
+
+100 Tz
+
+0 Tt
+
+0 TA
+
+0 0 5 TC
+
+100 100 200 TW
+
+0 0 0 Ti
+
+0 Ta
+
+0 Tq
+
+0 0 Tl
+
+0 Tc
+
+0 Tw
+
+(Symbol) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 99.5 42.4375 0 Tp
+
+TP
+
+-28.6133 0 Td
+
+0 Tr
+
+1 Ta
+
+(Cartographic\r) Tx 
+
+-1.3916 -12 Td
+
+(specifications) Tx 
+
+(\r) TX 
+
+TO
+
+-95.25 4065.4375 m
+
+-95.25 -4574.5625 L
+
+(N) *
+
+234.5 4065.4375 m
+
+234.5 -4574.5625 L
+
+(N) *
+
+257 4065.4375 m
+
+257 -4574.5625 L
+
+(N) *
+
+321.75 4065.4375 m
+
+321.75 -4574.5625 L
+
+(N) *
+
+337.5 4065.4375 m
+
+337.5 -4574.5625 L
+
+(N) *
+
+444.75 4065.4375 m
+
+444.75 -4574.5625 L
+
+(N) *
+
+188.75 4065.4375 m
+
+188.75 -4574.5625 L
+
+(N) *
+
+0 To
+
+1 0 0 1 173.5 54.4375 0 Tp
+
+TP
+
+-25.0061 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+/_Univers 10 Tf
+
+(SHEET  24) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -67.5 41.4375 0 Tp
+
+TP
+
+-23.0603 0 Td
+
+0 Tr
+
+/_Helvetica 10 Tf
+
+(Reference\r) Tx 
+
+6.1145 -12 Td
+
+(number) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 270.9375 41.3542 0 Tp
+
+TP
+
+0 Tr
+
+0 Ta
+
+(Symbol) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 386.5 41.4375 0 Tp
+
+TP
+
+-28.6133 0 Td
+
+0 Tr
+
+1 Ta
+
+(Cartographic\r) Tx 
+
+-1.3916 -12 Td
+
+(specifications) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 219.5 40.4375 0 Tp
+
+TP
+
+-23.0603 0 Td
+
+0 Tr
+
+(Reference\r) Tx 
+
+6.1145 -12 Td
+
+(number) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 440.5 96.4375 0 Tp
+
+TP
+
+-124.0195 0 Td
+
+0 Tr
+
+/_Souvenir-Medium 12 Tf
+
+2 Ta
+
+(U.S. Geological Survey\r) Tx 
+
+-8.666 -14.5 Td
+
+(Open-File Report 95-526\r) Tx 
+
+13.96 -14.5 Td
+
+(Sheet 24 of 28 Sheets) Tx 
+
+(\r) TX 
+
+TO
+
+-4147.5 63.4375 m
+
+4492.5 63.4375 L
+
+(N) *
+
+-4147.5 50.4375 m
+
+4492.5 50.4375 L
+
+(N) *
+
+0 To
+
+1 0 0 1 -79.5 -7.5625 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+/_Univers 10 Tf
+
+0 Ta
+
+(2.44.3) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -49.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.4) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -88.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.5) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -126.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.6) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -170.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.7) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -218.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.8) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -266.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.9) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -80.5 -312.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.10) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -357.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.11) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -396.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.12) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -433.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.13) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -471.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.14) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -79.5 -508.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.15) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 -77.5 -545.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.16) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -7.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.17) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -58.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.18) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -106.0413 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.19) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -153.0413 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.20) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -192.0413 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.21) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -229.0413 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.22) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -269.5208 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.23) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -312.5208 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.24) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 205.875 -379.2708 0 Tp
+
+TP
+
+0 Tr
+
+(2.44.25) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -453.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.45.1) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -514.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.45.2) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 206.5 -559.5625 0 Tp
+
+TP
+
+0 Tr
+
+(2.45.3) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.216 w
+
+1.5417 -90.3958 m
+
+1.5417 -87.9155 L
+
+-0.9386 -87.9155 L
+
+-0.9386 -90.3958 L
+
+1.5417 -90.3958 L
+
+b
+
+0.864 w
+
+-2.2535 -162.9931 m
+
+-2.2535 -174.4306 l
+
+S
+
+0.576 w
+
+-2.2535 -163.2431 m
+
+-5.8368 -164.2431 -17.2535 -165.5556 -25.2535 -165.389 c
+
+S
+
+-2.2535 -174.1806 m
+
+-5.9202 -175.514 -19.5868 -176.5556 -25.5868 -176.4723 c
+
+S
+
+-2.2535 -168.6181 m
+
+0.3298 -168.6181 6.5798 -168.389 8.9965 -167.9723 c
+
+S
+
+-24.9167 -216.4375 m
+
+14.7083 -216.4375 l
+
+S
+
+0.36 w [5.04 1.44 ]0 d
+
+-25.1667 -265.1302 m
+
+13.125 -265.1302 l
+
+S
+
+0.576 w []0 d
+
+-26.5209 -310.5834 m
+
+13.1041 -310.5834 l
+
+S
+
+0.504 w
+
+-8.1383 -217.6279 m
+
+-6.9138 -216.4063 L
+
+-8.0758 -215.1846 l
+
+S
+
+0 To
+
+1 0 0 1 -1.7818 -86.5306 0 Tp
+
+TP
+
+-27.6172 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Light 7 Tf
+
+2 Ta
+
+(Pumping\r) Tx 
+
+5.8311 -8.5 Td
+
+(Station) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 7.7708 -214.3542 0 Tp
+
+TP
+
+-14.7827 0 Td
+
+0 Tr
+
+(Lock) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 0.4375 -306.7292 0 Tp
+
+TP
+
+-15.1724 0 Td
+
+0 Tr
+
+(Gate) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 6.5 -263.4636 0 Tp
+
+TP
+
+-25.0073 0 Td
+
+0 Tr
+
+/_Univers-Oblique 5 Tf
+
+(SPILLWAY) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.72 w
+
+-6.6459 -312.6459 m
+
+-6.6459 -308.4584 l
+
+S
+
+0 To
+
+1 0 0 1 -6.8334 -358.073 0 Tp
+
+TP
+
+-15.9448 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Light 7 Tf
+
+(Rock) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.216 w
+
+-5.3334 -358.1355 m
+
+-1.8334 -358.1355 l
+
+S
+
+-4.3959 -359.7136 m
+
+-2.6459 -356.6825 l
+
+S
+
+-4.3334 -356.6669 m
+
+-2.5834 -359.698 l
+
+S
+
+U
+
+0.288 w
+
+-22.0832 -392.0624 m
+
+-20.3332 -394.5624 -14.5832 -400.8124 -12.5832 -402.8124 c
+
+S
+
+-13.8332 -390.3124 m
+
+-11.3332 -392.8124 -4.5832 -400.3124 -1.3332 -402.8124 c
+
+S
+
+-3.3332 -388.8124 m
+
+0.9168 -392.8124 5.4168 -400.0624 9.1668 -403.3124 c
+
+S
+
+9.4168 -392.0624 m
+
+11.6668 -394.3124 13.6668 -399.0624 15.6668 -401.5624 c
+
+S
+
+0.576 w
+
+-27.2082 -432.7291 m
+
+-19.7082 -430.9791 -14.5207 -433.7291 -8.8332 -433.7291 c
+
+-3.1457 -433.7291 2.6668 -431.4791 11.6668 -433.7291 c
+
+S
+
+u
+
+0.216 w
+
+77.2558 -10.0816 m
+
+79.6041 -10.0816 81.5078 -8.1779 81.5078 -5.8296 c
+
+81.5078 -3.4814 79.6041 -1.5777 77.2558 -1.5777 c
+
+74.9075 -1.5777 73.0038 -3.4814 73.0038 -5.8296 c
+
+73.0038 -8.1779 74.9075 -10.0816 77.2558 -10.0816 c
+
+s
+
+74.868 -3.2037 m
+
+78.976 -7.3154 l
+
+S
+
+0 O
+
+0 g
+
+0.25 w
+
+79.8808 -8.2671 m
+
+79.457 -6.4477 L
+
+78.1337 -7.7664 l
+
+79.8808 -8.2671 l
+
+b
+
+0.216 w
+
+79.6272 -3.2907 m
+
+75.3134 -7.5926 l
+
+S
+
+0 O
+
+0 g
+
+0.25 w
+
+76.4557 -7.7857 m
+
+75.1409 -6.4586 L
+
+74.7055 -8.2753 l
+
+76.4557 -7.7857 l
+
+b
+
+U
+
+u
+
+0.216 w
+
+0.8391 -10.0816 m
+
+3.1874 -10.0816 5.0911 -8.1779 5.0911 -5.8296 c
+
+5.0911 -3.4814 3.1874 -1.5777 0.8391 -1.5777 c
+
+-1.5092 -1.5777 -3.4129 -3.4814 -3.4129 -5.8296 c
+
+-3.4129 -8.1779 -1.5092 -10.0816 0.8391 -10.0816 c
+
+s
+
+-1.5487 -3.2037 m
+
+2.5593 -7.3154 l
+
+S
+
+0 O
+
+0 g
+
+0.25 w
+
+3.4641 -8.2671 m
+
+3.0403 -6.4477 L
+
+1.717 -7.7664 l
+
+3.4641 -8.2671 l
+
+b
+
+0.216 w
+
+3.2105 -3.2907 m
+
+-1.1033 -7.5926 l
+
+S
+
+0 O
+
+0 g
+
+0.25 w
+
+0.039 -7.7857 m
+
+-1.2758 -6.4586 L
+
+-1.7112 -8.2753 l
+
+0.039 -7.7857 l
+
+b
+
+U
+
+0.216 w
+
+105.2222 -51.4156 m
+
+106.2007 -51.4156 106.9939 -50.6224 106.9939 -49.6439 c
+
+106.9939 -48.6655 106.2007 -47.8723 105.2222 -47.8723 c
+
+104.2438 -47.8723 103.4506 -48.6655 103.4506 -49.6439 c
+
+103.4506 -50.6224 104.2438 -51.4156 105.2222 -51.4156 c
+
+s
+
+0 O
+
+0 g
+
+106.9831 -49.6439 m
+
+103.4614 -49.6439 L
+
+103.4614 -48.6655 104.2438 -47.8831 105.2222 -47.8831 C
+
+105.2222 -51.3735 L
+
+106.2007 -51.3735 106.9831 -50.6224 106.9831 -49.6439 C
+
+b
+
+105.2917 -90.3958 m
+
+105.2917 -87.9155 L
+
+102.8114 -87.9155 L
+
+102.8114 -90.3958 L
+
+105.2917 -90.3958 L
+
+b
+
+0.864 w
+
+110.25 -159.5833 m
+
+110.25 -171.0208 l
+
+S
+
+0.576 w
+
+110.25 -159.8333 m
+
+106.6667 -160.8333 95.25 -162.1458 87.25 -161.9792 c
+
+S
+
+110.25 -170.7708 m
+
+106.5833 -172.1042 92.9167 -173.1458 86.9167 -173.0625 c
+
+S
+
+110.25 -165.2083 m
+
+112.8333 -165.2083 119.0833 -164.9792 121.5 -164.5625 c
+
+S
+
+59.375 -219.9375 m
+
+99 -219.9375 l
+
+S
+
+0.36 w [5.04 1.44 ]0 d
+
+73.7917 -265.3958 m
+
+112.0834 -265.3958 l
+
+S
+
+0.576 w []0 d
+
+59.5 -308.8542 m
+
+99.125 -308.8542 l
+
+S
+
+0.504 w
+
+76.1534 -221.1279 m
+
+77.3779 -219.9063 L
+
+76.2159 -218.6846 l
+
+S
+
+0 To
+
+1 0 0 1 80.4722 -46.9564 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+0 Ta
+
+(Gaging\r) Tx 
+
+0 -8.5 Td
+
+(Station ) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.216 w
+
+5.7083 -51.3394 m
+
+6.6868 -51.3394 7.48 -50.5462 7.48 -49.5677 c
+
+7.48 -48.5893 6.6868 -47.7961 5.7083 -47.7961 c
+
+4.7299 -47.7961 3.9367 -48.5893 3.9367 -49.5677 c
+
+3.9367 -50.5462 4.7299 -51.3394 5.7083 -51.3394 c
+
+s
+
+0 O
+
+0 g
+
+7.4692 -49.5677 m
+
+3.9475 -49.5677 L
+
+3.9475 -48.5893 4.7299 -47.8069 5.7083 -47.8069 C
+
+5.7083 -51.2973 L
+
+6.6868 -51.2973 7.4692 -50.5462 7.4692 -49.5677 C
+
+b
+
+0 To
+
+1 0 0 1 -19.0417 -46.8802 0 Tp
+
+TP
+
+0 Tr
+
+1 w
+
+(Gaging\r) Tx 
+
+0 -8.5 Td
+
+(Station ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 101.9682 -86.5306 0 Tp
+
+TP
+
+-27.6172 0 Td
+
+0 Tr
+
+2 Ta
+
+(Pumping\r) Tx 
+
+5.8311 -8.5 Td
+
+(Station) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 92.0625 -217.8542 0 Tp
+
+TP
+
+-14.7827 0 Td
+
+0 Tr
+
+(Lock) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 86.4583 -305 0 Tp
+
+TP
+
+-15.1724 0 Td
+
+0 Tr
+
+(Gate) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 105.4584 -263.7292 0 Tp
+
+TP
+
+-25.0073 0 Td
+
+0 Tr
+
+/_Univers-Oblique 5 Tf
+
+(SPILLWAY) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.72 w
+
+79.375 -310.9167 m
+
+79.375 -306.7292 l
+
+S
+
+0 To
+
+1 0 0 1 98.875 -361.0886 0 Tp
+
+TP
+
+-15.9448 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Light 7 Tf
+
+(Rock) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.216 w
+
+100.375 -361.1511 m
+
+103.875 -361.1511 l
+
+S
+
+101.3125 -362.7292 m
+
+103.0625 -359.6981 l
+
+S
+
+101.375 -359.6825 m
+
+103.125 -362.7136 l
+
+S
+
+U
+
+0.288 w
+
+67.2501 -392.3958 m
+
+69.0001 -394.8958 74.7501 -401.1458 76.7501 -403.1458 c
+
+S
+
+75.5001 -390.6458 m
+
+78.0001 -393.1458 84.7501 -400.6458 88.0001 -403.1458 c
+
+S
+
+86.0001 -389.1458 m
+
+90.2501 -393.1458 94.7501 -400.3958 98.5001 -403.6458 c
+
+S
+
+98.7501 -392.3958 m
+
+101.0001 -394.6458 103.0001 -399.3958 105.0001 -401.8958 c
+
+S
+
+0.576 w
+
+62.2918 -432.6458 m
+
+69.7918 -430.8958 74.9793 -433.6458 80.6668 -433.6458 c
+
+86.3543 -433.6458 92.1668 -431.3958 101.1668 -433.6458 c
+
+S
+
+0 To
+
+1 0 0 1 86.3373 3.5249 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Oblique 6 Tf
+
+0 Ta
+
+(Diameter 3.0 \r) Tx 
+
+0 -7 Td
+
+(Weight .075 \r) Tx 
+
+0 -7 Td
+
+(Arrow length 2.5 \r) Tx 
+
+0 -7 Td
+
+(Triangle .75 x .75 x .75 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 67.4872 -38.9544 0 Tp
+
+TP
+
+-7.333 0 Td
+
+0 Tr
+
+1 Ta
+
+(UL-7 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+73.9624 -37.9564 m
+
+79.7472 -41.7746 l
+
+S
+
+77.9799 -39.0334 m
+
+80.0846 -42.0121 L
+
+76.4741 -41.4969 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 60.9583 -78.0625 0 Tp
+
+TP
+
+-7.333 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UL-7 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+67.4335 -77.0645 m
+
+73.2183 -80.8827 l
+
+S
+
+71.451 -78.1415 m
+
+73.5557 -81.1202 L
+
+69.9452 -80.605 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 70.0248 -352.3105 0 Tp
+
+TP
+
+-7.333 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UL-7 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+76.5 -351.3125 m
+
+82.2848 -355.1307 l
+
+S
+
+80.5175 -352.3895 m
+
+82.6222 -355.3682 L
+
+79.0117 -354.853 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 65.5248 -260.6855 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UI-5 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+72.152 -259.3039 m
+
+78.8663 -261.0246 l
+
+S
+
+76.301 -259.0105 m
+
+79.2627 -261.139 L
+
+75.6819 -261.8306 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 103.5039 -206.6022 0 Tp
+
+TP
+
+-7.333 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UL-7 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+96.2951 -207.5693 m
+
+91.4886 -212.5634 l
+
+S
+
+94.5055 -211.324 m
+
+91.1937 -212.852 L
+
+92.3569 -209.3954 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 102.5 -299.5625 0 Tp
+
+TP
+
+-7.333 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UL-7 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+94.233 -299.0095 m
+
+87.7781 -301.5347 l
+
+S
+
+91.0368 -301.6711 m
+
+87.3895 -301.6735 L
+
+89.8921 -299.0205 l
+
+S
+
+U
+
+u
+
+87.5359 -314.8413 m
+
+81.5835 -311.2899 l
+
+S
+
+83.4736 -313.948 m
+
+81.2357 -311.068 L
+
+84.8659 -311.4186 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 111.3848 -47.8069 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+0 Ta
+
+(Diameter 1.25 \r) Tx 
+
+0 -7 Td
+
+(Weight .075 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 108.9583 -87.2291 0 Tp
+
+TP
+
+0 Tr
+
+(.875 square or \r) Tx 
+
+0 -7 Td
+
+(draft to scale) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+112.9575 -176.9264 m
+
+106.9081 -173.5433 l
+
+S
+
+108.8719 -176.1473 m
+
+106.5541 -173.3313 L
+
+110.1927 -173.5799 l
+
+S
+
+U
+
+u
+
+67.1634 -211.089 m
+
+69.0142 -217.7686 l
+
+S
+
+69.4836 -214.541 m
+
+69.1125 -218.1693 L
+
+66.7297 -215.4082 l
+
+S
+
+U
+
+u
+
+116.2208 -174.1151 m
+
+117.6822 -167.3397 l
+
+S
+
+115.7682 -169.9806 m
+
+117.7812 -166.9392 L
+
+118.6099 -170.4908 l
+
+S
+
+U
+
+u
+
+118.9068 -157.8806 m
+
+112.6618 -160.8876 l
+
+S
+
+115.9215 -160.7766 m
+
+112.2849 -161.0555 L
+
+114.5792 -158.2205 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 111.7465 -179.7223 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(.2 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 62.375 -307.125 0 Tp
+
+TP
+
+0 Tr
+
+(.2 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 62.9132 -209.9306 0 Tp
+
+TP
+
+0 Tr
+
+(.2 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 119.6655 -157.8602 0 Tp
+
+TP
+
+0 Tr
+
+(.3) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 60.4155 -168.6936 0 Tp
+
+TP
+
+0 Tr
+
+(8% cyan) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.288 w
+
+74.9267 -222.4651 m
+
+69.8357 -227.5388 l
+
+S
+
+0 To
+
+1 0 0 1 61.0412 -226.5621 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(45) Tx 
+
+/_Univers-Oblique 3 Tf
+
+2.7 Ts
+
+(o) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 102.5 -215.5625 0 Tp
+
+TP
+
+0 Tr
+
+/_Univers-Oblique 6 Tf
+
+0 Ts
+
+(Weight .175 \r) Tx 
+
+0 -7 Td
+
+(Minimum \r) Tx 
+
+0 -7 Td
+
+(Wing length .575 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 115.5 -260.5625 0 Tp
+
+TP
+
+0 Tr
+
+(Dash 1.75 \r) Tx 
+
+0 -7 Td
+
+(Space .5 \r) Tx 
+
+0 -7 Td
+
+(Weight .125 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 87.75 -317.9375 0 Tp
+
+TP
+
+0 Tr
+
+(Bar 1.5 \r) Tx 
+
+0 -7 Td
+
+(Weight .25 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 108.5 -356.5625 0 Tp
+
+TP
+
+0 Tr
+
+(Weight .075 \r) Tx 
+
+0 -7 Td
+
+(Length 1.25 \r) Tx 
+
+0 -7 Td
+
+(Angle 60) Tx 
+
+/_Univers-Oblique 3 Tf
+
+2.7 Ts
+
+(o) Tx 
+
+/_Univers-Oblique 6 Tf
+
+0 Ts
+
+( ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 107.5 -397.5625 0 Tp
+
+TP
+
+0 Tr
+
+(Weight .1 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 106.5 -431.5625 0 Tp
+
+TP
+
+0 Tr
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.576 w
+
+79.2751 -122.5343 m
+
+78.3065 -121.5657 76.736 -121.5657 75.7674 -122.5343 c
+
+74.7988 -123.5029 74.7988 -125.0734 75.7674 -126.042 c
+
+76.736 -127.0106 78.3064 -127.0106 79.2751 -126.042 c
+
+80.2437 -125.0734 80.2437 -123.5029 79.2751 -122.5343 c
+
+s
+
+0 To
+
+1 0 0 1 84.5001 -119.7291 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(Outer diameter 1.75 \r) Tx 
+
+0 -7 Td
+
+(Weight .2 \r) Tx 
+
+0 -7 Td
+
+(Inner diameter .375 ) Tx 
+
+(\r) TX 
+
+TO
+
+77.5217 -124.821 m
+
+77.8153 -124.821 78.0532 -124.5831 78.0532 -124.2895 c
+
+78.0532 -123.996 77.8153 -123.7581 77.5217 -123.7581 c
+
+77.2282 -123.7581 76.9902 -123.996 76.9902 -124.2895 c
+
+76.9902 -124.5831 77.2282 -124.821 77.5217 -124.821 c
+
+f
+
+0 R
+
+0 G
+
+0.576 w
+
+-4.3749 -122.7839 m
+
+-5.3435 -121.8153 -6.914 -121.8153 -7.8826 -122.7839 c
+
+-8.8512 -123.7525 -8.8512 -125.323 -7.8826 -126.2916 c
+
+-6.914 -127.2602 -5.3436 -127.2602 -4.3749 -126.2916 c
+
+-3.4063 -125.323 -3.4063 -123.7525 -4.3749 -122.7839 c
+
+s
+
+0 O
+
+0 g
+
+1 w
+
+-6.1283 -125.0706 m
+
+-5.8347 -125.0706 -5.5968 -124.8327 -5.5968 -124.5391 c
+
+-5.5968 -124.2456 -5.8347 -124.0077 -6.1283 -124.0077 c
+
+-6.4218 -124.0077 -6.6598 -124.2456 -6.6598 -124.5391 c
+
+-6.6598 -124.8327 -6.4218 -125.0706 -6.1283 -125.0706 c
+
+f
+
+0 R
+
+0 G
+
+0.288 w
+
+-22.2083 -508.1458 m
+
+17.4167 -508.1458 l
+
+S
+
+0 To
+
+1 0 0 1 4.9167 -506.6458 0 Tp
+
+TP
+
+-15.2722 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Oblique 5 Tf
+
+2 Ta
+
+(DITCH) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.288 w
+
+-22.0833 -471.3958 m
+
+-21.25 -471.3958 -20.4167 -471.5625 -19.6667 -471.3125 c
+
+-19.0833 -471.1458 -18.6667 -470.5625 -18.1667 -470.2292 c
+
+-17.9167 -470.0625 -17.75 -469.9792 -17.5 -469.8958 c
+
+-17.4167 -469.8125 -17.25 -469.6458 -17.1667 -469.6458 c
+
+-15.75 -469.1458 -14.1667 -469.1458 -12.6667 -469.4792 c
+
+-10.5 -469.8125 -8.5833 -470.7292 -6.5 -470.8958 c
+
+-4.8333 -471.0625 -3.25 -471.0625 -1.5833 -471.3125 c
+
+-0.1667 -471.4792 1.1667 -471.8958 2.5833 -472.0625 c
+
+6.8333 -472.4792 11 -472.3125 15.1667 -472.3125 c
+
+S
+
+-19.0833 -471.0625 m
+
+-17.5833 -472.2292 -15.6667 -472.3125 -13.8333 -472.4792 c
+
+-11.75 -472.6458 -9.8958 -472.7708 -7.5833 -472.2292 c
+
+-6.9926 -472.0908 -6.7969 -472.043 -6.2083 -471.8958 c
+
+-5.7083 -471.7708 -5.3333 -471.7292 -5 -471.6458 c
+
+-4.5833 -471.4792 -4.0833 -471.4792 -3.6667 -471.1458 c
+
+S
+
+-1.1667 -471.3125 m
+
+-1 -471.3125 -0.75 -471.3958 -0.5833 -471.3125 c
+
+1.3333 -470.2292 2.6667 -468.6458 4.5833 -467.5625 c
+
+5.3333 -467.2292 6.0833 -467.1458 6.9167 -466.9792 c
+
+9.5 -466.4792 11.2292 -466.6458 13.7917 -466.8958 c
+
+S
+
+-10.3958 -470.0208 m
+
+-10.3958 -469.9375 -10.1667 -469.8125 -10.1667 -469.7292 c
+
+-9.3333 -468.8125 -8.5 -468.0625 -7.4167 -467.5625 c
+
+-5.5833 -466.6458 -3.5 -466.2292 -1.5 -466.8125 c
+
+-0.0833 -467.1458 1.4583 -467.9583 2.7917 -468.7083 c
+
+S
+
+-9 -468.6458 m
+
+-7.4167 -469.3125 -5.4583 -469.3333 -4.0833 -469.0625 C
+
+-3.0833 -468.7083 -1.9167 -467.5625 -0.75 -467.0625 c
+
+1.4167 -466.0625 4.5625 -465.875 6.7292 -466.9583 c
+
+S
+
+1.6042 -469.7083 m
+
+2.5208 -469.7917 3.7292 -469.7083 4.5833 -469.8125 c
+
+6.7309 -470.0744 8.5833 -470.9792 10.5833 -471.5625 c
+
+11.25 -471.8125 12.1875 -472.1875 12.8542 -472.2708 c
+
+S
+
+6.3333 -470.2292 m
+
+6.9167 -470.0625 7.4167 -469.5625 7.9167 -469.2292 c
+
+8.4167 -468.9792 9.1305 -468.5988 9.6042 -468.3958 c
+
+10.0417 -468.2083 10.6667 -467.9792 11.25 -467.7292 c
+
+12.25 -467.3958 13.0417 -467 14.0417 -466.8333 c
+
+14.5417 -466.75 15.5 -466.5625 15.9167 -466.8958 c
+
+S
+
+-7.0833 -467.3125 m
+
+-7.1667 -467.3125 -7.25 -467.3125 -7.3333 -467.3125 c
+
+-8.0833 -466.5625 -8.9167 -465.9792 -9.9167 -465.8958 c
+
+-11.5833 -465.7292 -13.1667 -465.6458 -14.8333 -465.8958 c
+
+-15.5833 -466.0625 -16.25 -466.1458 -17 -466.2292 c
+
+-18.75 -466.4792 -20.4167 -466.2292 -22.0833 -466.3125 c
+
+S
+
+-18.3333 -466.3125 m
+
+-17.5833 -467.6458 -16 -468.1458 -14.8333 -469.0625 c
+
+S
+
+9.7292 -471.1458 m
+
+10.8542 -471.1458 11.9167 -471.2708 13.0417 -470.9583 c
+
+13.9792 -470.7083 14.8542 -470.3333 15.7292 -469.8958 c
+
+S
+
+67.875 -507.5625 m
+
+107.5 -507.5625 l
+
+S
+
+0 To
+
+1 0 0 1 95 -506.0625 0 Tp
+
+TP
+
+-15.2722 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(DITCH) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.288 w
+
+68.9167 -470.7291 m
+
+69.75 -470.7291 70.5833 -470.8958 71.3333 -470.6458 c
+
+71.9167 -470.4791 72.3333 -469.8958 72.8333 -469.5625 c
+
+73.0833 -469.3958 73.25 -469.3125 73.5 -469.2291 c
+
+73.5833 -469.1458 73.75 -468.9791 73.8333 -468.9791 c
+
+75.25 -468.4791 76.8333 -468.4791 78.3333 -468.8125 c
+
+80.5 -469.1458 82.4167 -470.0625 84.5 -470.2291 c
+
+86.1667 -470.3958 87.75 -470.3958 89.4167 -470.6458 c
+
+90.8333 -470.8125 92.1667 -471.2291 93.5833 -471.3958 c
+
+97.8333 -471.8125 102 -471.6458 106.1667 -471.6458 c
+
+S
+
+71.9167 -470.3958 m
+
+73.4167 -471.5625 75.3333 -471.6458 77.1667 -471.8125 c
+
+79.25 -471.9791 81.1042 -472.1041 83.4167 -471.5625 c
+
+84.0074 -471.4241 84.2031 -471.3763 84.7917 -471.2291 c
+
+85.2917 -471.1041 85.6667 -471.0625 86 -470.9791 c
+
+86.4167 -470.8125 86.9167 -470.8125 87.3333 -470.4791 c
+
+S
+
+89.8333 -470.6458 m
+
+90 -470.6458 90.25 -470.7291 90.4167 -470.6458 c
+
+92.3333 -469.5625 93.6667 -467.9791 95.5833 -466.8958 c
+
+96.3333 -466.5625 97.0833 -466.4791 97.9167 -466.3125 c
+
+100.5 -465.8125 102.2292 -465.9791 104.7917 -466.2291 c
+
+S
+
+80.6042 -469.3541 m
+
+80.6042 -469.2708 80.8333 -469.1458 80.8333 -469.0625 c
+
+81.6667 -468.1458 82.5 -467.3958 83.5833 -466.8958 c
+
+85.4167 -465.9791 87.5 -465.5625 89.5 -466.1458 c
+
+90.9167 -466.4791 92.4583 -467.2916 93.7917 -468.0416 c
+
+S
+
+82 -467.9791 m
+
+83.5833 -468.6458 85.5417 -468.6666 86.9167 -468.3958 C
+
+87.9167 -468.0416 89.0833 -466.8958 90.25 -466.3958 c
+
+92.4167 -465.3958 95.5625 -465.2083 97.7292 -466.2916 c
+
+S
+
+92.6042 -469.0416 m
+
+93.5208 -469.125 94.7292 -469.0416 95.5833 -469.1458 c
+
+97.7309 -469.4077 99.5833 -470.3125 101.5833 -470.8958 c
+
+102.25 -471.1458 103.1875 -471.5208 103.8542 -471.6041 c
+
+S
+
+97.3333 -469.5625 m
+
+97.9167 -469.3958 98.4167 -468.8958 98.9167 -468.5625 c
+
+99.4167 -468.3125 100.1305 -467.9321 100.6042 -467.7291 c
+
+101.0417 -467.5416 101.6667 -467.3125 102.25 -467.0625 c
+
+103.25 -466.7291 104.0417 -466.3333 105.0417 -466.1666 c
+
+105.5417 -466.0833 106.5 -465.8958 106.9167 -466.2291 c
+
+S
+
+83.9167 -466.6458 m
+
+83.8333 -466.6458 83.75 -466.6458 83.6667 -466.6458 c
+
+82.9167 -465.8958 82.0833 -465.3125 81.0833 -465.2291 c
+
+79.4167 -465.0625 77.8333 -464.9791 76.1667 -465.2291 c
+
+75.4167 -465.3958 74.75 -465.4791 74 -465.5625 c
+
+72.25 -465.8125 70.5833 -465.5625 68.9167 -465.6458 c
+
+S
+
+72.6667 -465.6458 m
+
+73.4167 -466.9791 75 -467.4791 76.1667 -468.3958 c
+
+S
+
+100.7292 -470.4791 m
+
+101.8542 -470.4791 102.9167 -470.6041 104.0417 -470.2916 c
+
+104.9792 -470.0416 105.8542 -469.6666 106.7292 -469.2291 c
+
+S
+
+0 To
+
+1 0 0 1 65.8333 -503.2292 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Oblique 6 Tf
+
+1 Ta
+
+(UI-5 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+72.4605 -501.8476 m
+
+79.1748 -503.5683 l
+
+S
+
+76.6095 -501.5541 m
+
+79.5713 -503.6826 L
+
+75.9904 -504.3742 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 111.3332 -467.1458 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+0 Ta
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 111.9165 -505.2292 0 Tp
+
+TP
+
+0 Tr
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.288 w [7.2 1.44 ]0 d
+
+269.4584 -105.0413 m
+
+312 -105.0413 l
+
+S
+
+0.576 w
+
+267.4585 -149.4579 m
+
+310.0001 -149.4579 l
+
+S
+
+267.4585 -153.5621 m
+
+310.0001 -153.5621 l
+
+S
+
+[]0 d
+
+-13.8748 -547.3958 m
+
+25.7502 -547.3958 l
+
+S
+
+-13.8748 -543.3958 m
+
+25.7502 -543.3958 l
+
+S
+
+270.8335 -7.6875 m
+
+278.8544 -7.6875 l
+
+S
+
+[3.6 1.44 ]0 d
+
+278.8544 -7.6875 m
+
+301.0419 -7.6875 l
+
+S
+
+[]0 d
+
+301.0419 -7.6875 m
+
+309.6669 -7.6875 l
+
+S
+
+0 To
+
+1 0 0 1 290.5419 -6.0416 0 Tp
+
+TP
+
+-8.4711 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Oblique 5 Tf
+
+1 Ta
+
+(FLUME) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 302.7292 -56.0492 0 Tp
+
+TP
+
+-27.5024 0 Td
+
+0 Tr
+
+2 Ta
+
+(PENSTOCK) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 290.3334 -103.3122 0 Tp
+
+TP
+
+-9.5837 0 Td
+
+0 Tr
+
+1 Ta
+
+(SIPHON) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 288.2501 -147.5413 0 Tp
+
+TP
+
+-11.944 0 Td
+
+0 Tr
+
+(CHANNEL) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.504 w
+
+278.3799 -8.9166 m
+
+279.6044 -7.695 L
+
+278.4424 -6.4734 l
+
+S
+
+303.3544 -8.9166 m
+
+302.1299 -7.695 L
+
+303.2919 -6.4734 l
+
+S
+
+0.288 w
+
+269.5833 -58.5625 m
+
+277.6042 -58.5625 l
+
+S
+
+[3.6 1.44 ]0 d
+
+277.6042 -58.5625 m
+
+299.7917 -58.5625 l
+
+S
+
+[]0 d
+
+299.7917 -58.5625 m
+
+308.4167 -58.5625 l
+
+S
+
+277.1297 -59.7916 m
+
+278.3542 -58.57 L
+
+277.1922 -57.3484 l
+
+S
+
+302.1042 -59.7916 m
+
+300.8797 -58.57 L
+
+302.0417 -57.3484 l
+
+S
+
+0.576 w
+
+272.5841 -227.3959 m
+
+272.3966 -233.3981 280.0008 -236.6459 285.0841 -236.7292 c
+
+290.1674 -236.8125 300.7508 -234.9792 301.1674 -231.5625 c
+
+301.5841 -228.1459 299.2508 -226.8125 298.5841 -225.9792 c
+
+297.9174 -225.1459 297.5841 -220.8125 293.7508 -220.8125 c
+
+289.9174 -220.8125 289.5841 -223.1459 287.0008 -223.1459 c
+
+284.4174 -223.1459 281.5841 -221.7292 279.4174 -221.8125 c
+
+277.2508 -221.8959 272.7508 -222.0625 272.5841 -227.3959 c
+
+s
+
+270.2924 -264.3754 m
+
+278.2924 -269.8754 293.2091 -266.1254 306.0424 -269.2087 c
+
+S
+
+0.216 w
+
+273.9591 -267.5004 m
+
+273.9591 -268.292 273.8341 -269.042 274.0008 -269.8337 c
+
+274.0841 -270.2087 274.5008 -270.5004 274.8758 -270.6254 c
+
+275.2508 -270.792 275.6258 -270.792 276.0008 -270.667 c
+
+276.1674 -270.6254 276.3758 -270.417 276.4591 -270.167 c
+
+S
+
+277.5008 -268.167 m
+
+277.5008 -269.1254 277.5008 -270.167 277.8341 -271.0837 c
+
+278.0424 -271.6254 278.7508 -271.8754 279.3341 -271.667 c
+
+279.5008 -271.6254 279.7508 -271.417 279.6674 -271.167 c
+
+S
+
+280.7508 -268.8754 m
+
+280.7924 -269.667 280.5841 -270.4587 280.8758 -271.2087 c
+
+281.2091 -272.0004 282.0841 -272.542 283.0008 -272.3337 c
+
+283.2091 -272.292 283.3341 -271.9587 283.2924 -271.667 c
+
+S
+
+283.6258 -268.5837 m
+
+283.6674 -269.417 283.4591 -270.2504 283.7924 -271.042 c
+
+283.9591 -271.5004 284.5008 -271.8337 285.0008 -271.6254 c
+
+285.0841 -271.5837 285.2091 -271.417 285.1674 -271.2087 c
+
+S
+
+286.1674 -268.417 m
+
+286.2091 -269.542 285.9591 -270.7087 286.4174 -271.8337 c
+
+286.6674 -272.4587 287.3758 -272.792 288.0841 -272.6254 c
+
+288.2508 -272.6254 288.3341 -272.3754 288.4591 -272.2504 c
+
+S
+
+288.5008 -268.5837 m
+
+288.5424 -269.542 288.3341 -270.542 288.6674 -271.4587 c
+
+288.8758 -271.9587 289.5841 -272.042 290.0841 -271.8754 c
+
+290.3758 -271.7504 290.5424 -271.3754 290.5841 -271.042 c
+
+290.5893 -271.0007 290.7091 -270.9587 290.7924 -270.9587 c
+
+291.0424 -270.9587 291.3341 -271.0004 291.5841 -270.917 c
+
+292.0008 -270.8337 291.7508 -269.8337 291.7508 -269.4587 c
+
+S
+
+292.8341 -268.6254 m
+
+292.8341 -269.417 292.7508 -270.167 292.8758 -270.9587 c
+
+292.9591 -271.3754 293.9174 -271.8754 294.4174 -271.792 c
+
+S
+
+294.9591 -269.417 m
+
+295.5008 -269.9587 295.3758 -270.7504 295.5008 -271.4587 c
+
+295.5424 -271.5837 295.7924 -272.0004 295.9174 -272.1254 c
+
+S
+
+296.7508 -269.292 m
+
+297.1258 -269.8754 297.0424 -270.5837 297.2924 -271.2087 c
+
+297.3758 -271.417 297.5008 -271.6254 297.7091 -271.792 c
+
+298.0424 -272.0004 298.3758 -272.0837 298.7508 -272.042 c
+
+S
+
+299.3758 -269.417 m
+
+299.4591 -270.2087 299.6258 -270.9587 299.8758 -271.7504 c
+
+299.9174 -271.8754 300.3758 -272.2087 300.5841 -272.2087 c
+
+S
+
+301.8758 -269.9587 m
+
+301.9174 -270.792 301.7091 -271.6254 302.0008 -272.417 c
+
+302.1258 -272.8337 302.5841 -273.042 303.0424 -272.9587 c
+
+S
+
+304.0424 -270.2087 m
+
+304.1258 -270.8754 303.7924 -271.7504 304.5008 -272.167 c
+
+S
+
+288.4591 -269.042 m
+
+288.6674 -269.042 289.2091 -269.042 289.4174 -269.042 c
+
+S
+
+288.4591 -269.7504 m
+
+288.6674 -269.7504 289.2091 -269.7087 289.4174 -269.7087 c
+
+S
+
+288.5008 -270.8337 m
+
+288.7508 -270.8754 289.3341 -270.6254 289.5841 -270.542 c
+
+S
+
+289.3341 -271.8754 m
+
+289.5424 -271.792 289.6258 -271.5837 289.7508 -271.417 c
+
+S
+
+287.3341 -272.542 m
+
+287.5841 -272.4587 287.5841 -272.167 287.7924 -272.042 c
+
+S
+
+286.4174 -271.8337 m
+
+286.7091 -271.7504 286.9174 -271.7504 287.1258 -271.6254 c
+
+S
+
+286.1674 -270.2504 m
+
+286.4174 -270.2504 286.6674 -270.2504 286.9174 -270.2504 c
+
+S
+
+286.1674 -268.8754 m
+
+286.3341 -268.8754 286.8341 -268.8754 287.0008 -268.8754 c
+
+S
+
+292.7924 -269.417 m
+
+293.0008 -269.417 293.2508 -269.417 293.4591 -269.417 c
+
+S
+
+293.0424 -271.2504 m
+
+293.2508 -271.2504 293.4174 -271.2504 293.5841 -271.1254 c
+
+S
+
+292.8758 -270.3337 m
+
+293.0841 -270.3337 293.2508 -270.3754 293.4591 -270.292 c
+
+S
+
+295.1674 -269.667 m
+
+295.3758 -269.6254 295.5424 -269.7087 295.7508 -269.6254 c
+
+S
+
+295.5008 -271.4587 m
+
+295.7508 -271.3754 296.0424 -271.3754 296.2924 -271.3754 c
+
+S
+
+295.4174 -270.3754 m
+
+295.6258 -270.3754 295.7924 -270.3754 296.0008 -270.3754 c
+
+S
+
+296.8758 -269.417 m
+
+297.0841 -269.417 297.3341 -269.417 297.5424 -269.417 c
+
+S
+
+297.1674 -270.6254 m
+
+297.4591 -270.6254 297.7924 -270.6254 298.0841 -270.6254 c
+
+S
+
+297.7091 -271.792 m
+
+297.8758 -271.7087 298.3341 -271.3754 298.5008 -271.3754 C
+
+298.5008 -271.3337 298.2091 -271.6254 298.2508 -271.6254 c
+
+S
+
+299.5841 -270.3754 m
+
+299.7924 -270.3754 300.0424 -270.3754 300.2508 -270.3754 c
+
+S
+
+299.4174 -269.5837 m
+
+299.5424 -269.5837 299.7091 -269.5837 299.8341 -269.5837 c
+
+S
+
+299.8758 -271.542 m
+
+299.9591 -271.542 300.3758 -271.4587 300.4591 -271.3754 c
+
+S
+
+301.8341 -270.2087 m
+
+301.9591 -270.2087 302.4591 -270.2087 302.5841 -270.2087 c
+
+S
+
+301.8758 -271.0837 m
+
+302.0424 -271.0837 302.2508 -271.0837 302.4174 -271.0837 c
+
+S
+
+301.9174 -272.1254 m
+
+302.0841 -272.1254 302.5424 -272.0837 302.6674 -271.9587 c
+
+S
+
+304.0841 -270.6254 m
+
+304.2924 -270.6254 304.5008 -270.6254 304.7091 -270.6254 c
+
+S
+
+304.0841 -271.2087 m
+
+304.2924 -271.417 304.5841 -271.3754 304.8341 -271.3754 c
+
+S
+
+270.4174 -265.8754 m
+
+270.5008 -267.2504 270.1258 -268.7504 270.7508 -270.0004 c
+
+270.8758 -270.292 271.4174 -270.2504 271.7091 -270.0837 c
+
+271.7924 -270.042 271.9174 -269.8337 271.9591 -269.667 c
+
+S
+
+272.1258 -266.667 m
+
+272.1674 -267.3754 272.0424 -268.042 272.2508 -268.7504 c
+
+272.3758 -269.0837 272.7091 -269.1254 273.0008 -269.0837 c
+
+S
+
+272.2091 -268.2504 m
+
+272.3341 -268.292 272.4591 -268.3337 272.5841 -268.3337 c
+
+S
+
+272.1258 -267.2504 m
+
+272.2924 -267.2504 272.4174 -267.3754 272.5841 -267.3337 c
+
+S
+
+270.4591 -266.417 m
+
+270.6674 -266.6254 271.0008 -266.5004 271.2508 -266.6254 c
+
+S
+
+270.4174 -267.792 m
+
+270.6258 -267.7504 271.0424 -267.8337 271.2508 -267.792 c
+
+S
+
+270.5008 -269.2504 m
+
+270.7091 -269.3754 270.9591 -269.3337 271.1674 -269.3337 c
+
+S
+
+275.8758 -270.6254 m
+
+275.8758 -270.5004 276.0008 -269.917 276.0008 -269.792 c
+
+S
+
+274.5008 -270.417 m
+
+274.6258 -270.292 275.2091 -270.0004 275.3341 -269.8754 c
+
+S
+
+273.9591 -269.417 m
+
+274.2508 -269.417 274.5841 -269.4587 274.8758 -269.3754 c
+
+S
+
+273.9591 -268.0837 m
+
+274.3341 -268.1254 274.7091 -268.2504 275.0841 -268.2087 c
+
+S
+
+277.5424 -268.5837 m
+
+277.8341 -268.5837 278.1258 -268.7087 278.4174 -268.667 c
+
+S
+
+277.5424 -269.667 m
+
+277.7924 -269.667 278.5008 -269.542 278.7508 -269.542 c
+
+S
+
+277.8341 -271.0837 m
+
+278.1258 -271.042 278.7508 -270.7087 279.0008 -270.7087 c
+
+S
+
+282.4174 -272.292 m
+
+282.3758 -272.1254 282.4591 -271.9587 282.5424 -271.792 c
+
+S
+
+281.2924 -271.7504 m
+
+281.5008 -271.667 281.7091 -271.667 281.8341 -271.4587 c
+
+S
+
+280.7508 -270.667 m
+
+281.0008 -270.667 281.5008 -270.542 281.7508 -270.4587 c
+
+S
+
+280.7924 -269.3754 m
+
+281.0424 -269.3754 281.3341 -269.3754 281.5841 -269.3754 c
+
+S
+
+283.6258 -268.917 m
+
+283.8341 -268.917 284.2091 -268.9587 284.4174 -268.9587 c
+
+S
+
+283.6258 -269.8337 m
+
+283.8758 -269.8337 284.0841 -269.8337 284.3341 -269.8337 c
+
+S
+
+283.7508 -270.8754 m
+
+283.9591 -270.917 284.1674 -271.0004 284.4174 -270.9587 c
+
+S
+
+291.2924 -271.0837 m
+
+291.2924 -270.917 291.2924 -270.7087 291.2924 -270.542 c
+
+S
+
+290.5008 -271.167 m
+
+290.5008 -271.1254 290.4591 -271.0837 290.5841 -271.042 C
+
+290.4591 -271.0004 290.4591 -270.292 290.3341 -270.2504 c
+
+S
+
+279.5008 -271.542 m
+
+279.8341 -271.542 280.0008 -271.2087 280.0424 -270.917 c
+
+S
+
+0 To
+
+1 0 0 1 279.4174 -314.9587 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Light 7 Tf
+
+0 Ta
+
+(Sand) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.504 w [0.504 1.08 ]0 d
+
+272.0007 -312.042 m
+
+272.0372 -316.7085 278.9174 -320.792 287.3341 -320.792 c
+
+295.7507 -320.792 305.7507 -316.292 303.9174 -312.042 c
+
+300.7124 -304.6123 290.5841 -308.3753 287.0007 -304.1253 c
+
+284.0561 -300.6329 271.9174 -301.3753 272.0007 -312.042 c
+
+s
+
+0.288 w [7.2 1.44 ]0 d
+
+353.9584 -105.0413 m
+
+396.5 -105.0413 l
+
+S
+
+0.576 w
+
+353.9584 -149.9371 m
+
+396.5 -149.9371 l
+
+S
+
+353.9584 -154.0413 m
+
+396.5 -154.0413 l
+
+S
+
+[]0 d
+
+58.875 -546.5625 m
+
+98.5 -546.5625 l
+
+S
+
+58.875 -542.5625 m
+
+98.5 -542.5625 l
+
+S
+
+349.3798 -5.2991 m
+
+357.4007 -5.2991 l
+
+S
+
+[3.6 1.44 ]0 d
+
+357.4007 -5.2991 m
+
+379.5882 -5.2991 l
+
+S
+
+[]0 d
+
+379.5882 -5.2991 m
+
+388.2132 -5.2991 l
+
+S
+
+0 To
+
+1 0 0 1 369.0882 -3.6532 0 Tp
+
+TP
+
+-8.4711 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Oblique 5 Tf
+
+1 Ta
+
+(FLUME) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 384.8125 -57.0492 0 Tp
+
+TP
+
+-27.5024 0 Td
+
+0 Tr
+
+2 Ta
+
+(PENSTOCK) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 374.8334 -103.3122 0 Tp
+
+TP
+
+-9.5837 0 Td
+
+0 Tr
+
+1 Ta
+
+(SIPHON) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 374.75 -148.0205 0 Tp
+
+TP
+
+-11.944 0 Td
+
+0 Tr
+
+(CHANNEL) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.504 w
+
+356.9262 -6.5282 m
+
+358.1507 -5.3066 L
+
+356.9887 -4.085 l
+
+S
+
+381.9007 -6.5282 m
+
+380.6762 -5.3066 L
+
+381.8382 -4.085 l
+
+S
+
+0.288 w
+
+351.6666 -59.5625 m
+
+359.6875 -59.5625 l
+
+S
+
+[3.6 1.44 ]0 d
+
+359.6875 -59.5625 m
+
+381.875 -59.5625 l
+
+S
+
+[]0 d
+
+381.875 -59.5625 m
+
+390.5 -59.5625 l
+
+S
+
+359.213 -60.7916 m
+
+360.4375 -59.57 L
+
+359.2755 -58.3484 l
+
+S
+
+384.1875 -60.7916 m
+
+382.963 -59.57 L
+
+384.125 -58.3484 l
+
+S
+
+0.576 w
+
+383.7508 -227.3959 m
+
+383.5633 -233.3981 391.1675 -236.6459 396.2508 -236.7292 c
+
+401.3341 -236.8125 411.9175 -234.9792 412.3341 -231.5625 c
+
+412.7508 -228.1459 410.4175 -226.8125 409.7508 -225.9792 c
+
+409.0841 -225.1459 408.7508 -220.8125 404.9175 -220.8125 c
+
+401.0841 -220.8125 400.7508 -223.1459 398.1675 -223.1459 c
+
+395.5841 -223.1459 392.7508 -221.7292 390.5841 -221.8125 c
+
+388.4175 -221.8959 383.9175 -222.0625 383.7508 -227.3959 c
+
+s
+
+351.9591 -264.667 m
+
+359.9591 -270.167 374.8758 -266.417 387.7091 -269.5003 c
+
+S
+
+0.216 w
+
+355.6258 -267.792 m
+
+355.6258 -268.5836 355.5008 -269.3336 355.6675 -270.1253 c
+
+355.7508 -270.5003 356.1675 -270.792 356.5425 -270.917 c
+
+356.9175 -271.0836 357.2925 -271.0836 357.6675 -270.9586 c
+
+357.8341 -270.917 358.0425 -270.7086 358.1258 -270.4586 c
+
+S
+
+359.1675 -268.4586 m
+
+359.1675 -269.417 359.1675 -270.4586 359.5008 -271.3753 c
+
+359.7092 -271.917 360.4175 -272.167 361.0008 -271.9586 c
+
+361.1675 -271.917 361.4175 -271.7086 361.3342 -271.4586 c
+
+S
+
+362.4175 -269.167 m
+
+362.4591 -269.9586 362.2508 -270.7503 362.5425 -271.5003 c
+
+362.8758 -272.292 363.7508 -272.8336 364.6675 -272.6253 c
+
+364.8758 -272.5836 365.0008 -272.2503 364.9591 -271.9586 c
+
+S
+
+365.2925 -268.8753 m
+
+365.3341 -269.7086 365.1258 -270.542 365.4591 -271.3336 c
+
+365.6258 -271.792 366.1675 -272.1253 366.6675 -271.917 c
+
+366.7508 -271.8753 366.8758 -271.7086 366.8341 -271.5003 c
+
+S
+
+367.8342 -268.7086 m
+
+367.8758 -269.8336 367.6258 -271.0003 368.0842 -272.1253 c
+
+368.3342 -272.7503 369.0425 -273.0836 369.7508 -272.917 c
+
+369.9175 -272.917 370.0008 -272.667 370.1258 -272.542 c
+
+S
+
+370.1675 -268.8753 m
+
+370.2091 -269.8336 370.0008 -270.8336 370.3341 -271.7503 c
+
+370.5425 -272.2503 371.2508 -272.3336 371.7508 -272.167 c
+
+372.0425 -272.042 372.2091 -271.667 372.2508 -271.3336 c
+
+372.256 -271.2923 372.3758 -271.2503 372.4591 -271.2503 c
+
+372.7091 -271.2503 373.0008 -271.292 373.2508 -271.2086 c
+
+373.6675 -271.1253 373.4175 -270.1253 373.4175 -269.7503 c
+
+S
+
+374.5008 -268.917 m
+
+374.5008 -269.7086 374.4175 -270.4586 374.5425 -271.2503 c
+
+374.6258 -271.667 375.5841 -272.167 376.0841 -272.0836 c
+
+S
+
+376.6258 -269.7086 m
+
+377.1675 -270.2503 377.0425 -271.042 377.1675 -271.7503 c
+
+377.2091 -271.8753 377.4591 -272.292 377.5841 -272.417 c
+
+S
+
+378.4175 -269.5836 m
+
+378.7925 -270.167 378.7091 -270.8753 378.9591 -271.5003 c
+
+379.0425 -271.7086 379.1675 -271.917 379.3758 -272.0836 c
+
+379.7091 -272.292 380.0425 -272.3753 380.4175 -272.3336 c
+
+S
+
+381.0425 -269.7086 m
+
+381.1258 -270.5003 381.2925 -271.2503 381.5425 -272.042 c
+
+381.5841 -272.167 382.0425 -272.5003 382.2508 -272.5003 c
+
+S
+
+383.5425 -270.2503 m
+
+383.5841 -271.0836 383.3758 -271.917 383.6675 -272.7086 c
+
+383.7925 -273.1253 384.2508 -273.3336 384.7091 -273.2503 c
+
+S
+
+385.7091 -270.5003 m
+
+385.7925 -271.167 385.4591 -272.042 386.1675 -272.4586 c
+
+S
+
+370.1258 -269.3336 m
+
+370.3341 -269.3336 370.8758 -269.3336 371.0841 -269.3336 c
+
+S
+
+370.1258 -270.042 m
+
+370.3341 -270.042 370.8758 -270.0003 371.0841 -270.0003 c
+
+S
+
+370.1675 -271.1253 m
+
+370.4175 -271.167 371.0008 -270.917 371.2508 -270.8336 c
+
+S
+
+371.0008 -272.167 m
+
+371.2091 -272.0836 371.2925 -271.8753 371.4175 -271.7086 c
+
+S
+
+369.0008 -272.8336 m
+
+369.2508 -272.7503 369.2508 -272.4586 369.4592 -272.3336 c
+
+S
+
+368.0842 -272.1253 m
+
+368.3758 -272.042 368.5842 -272.042 368.7925 -271.917 c
+
+S
+
+367.8342 -270.542 m
+
+368.0842 -270.542 368.3342 -270.542 368.5842 -270.542 c
+
+S
+
+367.8342 -269.167 m
+
+368.0008 -269.167 368.5008 -269.167 368.6675 -269.167 c
+
+S
+
+374.4592 -269.7086 m
+
+374.6675 -269.7086 374.9175 -269.7086 375.1258 -269.7086 c
+
+S
+
+374.7092 -271.542 m
+
+374.9175 -271.542 375.0842 -271.542 375.2508 -271.417 c
+
+S
+
+374.5425 -270.6253 m
+
+374.7508 -270.6253 374.9175 -270.667 375.1258 -270.5836 c
+
+S
+
+376.8341 -269.9586 m
+
+377.0425 -269.917 377.2091 -270.0003 377.4175 -269.917 c
+
+S
+
+377.1675 -271.7503 m
+
+377.4175 -271.667 377.7091 -271.667 377.9591 -271.667 c
+
+S
+
+377.0841 -270.667 m
+
+377.2925 -270.667 377.4591 -270.667 377.6675 -270.667 c
+
+S
+
+378.5425 -269.7086 m
+
+378.7508 -269.7086 379.0008 -269.7086 379.2091 -269.7086 c
+
+S
+
+378.8341 -270.917 m
+
+379.1258 -270.917 379.4591 -270.917 379.7508 -270.917 c
+
+S
+
+379.3758 -272.0836 m
+
+379.5425 -272.0003 380.0008 -271.667 380.1675 -271.667 C
+
+380.1675 -271.6253 379.8758 -271.917 379.9175 -271.917 c
+
+S
+
+381.2508 -270.667 m
+
+381.4591 -270.667 381.7091 -270.667 381.9175 -270.667 c
+
+S
+
+381.0841 -269.8753 m
+
+381.2091 -269.8753 381.3758 -269.8753 381.5008 -269.8753 c
+
+S
+
+381.5425 -271.8336 m
+
+381.6258 -271.8336 382.0425 -271.7503 382.1258 -271.667 c
+
+S
+
+383.5008 -270.5003 m
+
+383.6258 -270.5003 384.1258 -270.5003 384.2508 -270.5003 c
+
+S
+
+383.5425 -271.3753 m
+
+383.7091 -271.3753 383.9175 -271.3753 384.0841 -271.3753 c
+
+S
+
+383.5841 -272.417 m
+
+383.7508 -272.417 384.2091 -272.3753 384.3341 -272.2503 c
+
+S
+
+385.7508 -270.917 m
+
+385.9591 -270.917 386.1675 -270.917 386.3758 -270.917 c
+
+S
+
+385.7508 -271.5003 m
+
+385.9591 -271.7086 386.2508 -271.667 386.5008 -271.667 c
+
+S
+
+352.0841 -266.167 m
+
+352.1675 -267.542 351.7925 -269.042 352.4175 -270.292 c
+
+352.5425 -270.5836 353.0841 -270.542 353.3758 -270.3753 c
+
+353.4591 -270.3336 353.5841 -270.1253 353.6258 -269.9586 c
+
+S
+
+353.7925 -266.9586 m
+
+353.8341 -267.667 353.7091 -268.3336 353.9175 -269.042 c
+
+354.0425 -269.3753 354.3758 -269.417 354.6675 -269.3753 c
+
+S
+
+353.8758 -268.542 m
+
+354.0008 -268.5836 354.1258 -268.6253 354.2508 -268.6253 c
+
+S
+
+353.7925 -267.542 m
+
+353.9591 -267.542 354.0841 -267.667 354.2508 -267.6253 c
+
+S
+
+352.1258 -266.7086 m
+
+352.3341 -266.917 352.6675 -266.792 352.9175 -266.917 c
+
+S
+
+352.0841 -268.0836 m
+
+352.2925 -268.042 352.7091 -268.1253 352.9175 -268.0836 c
+
+S
+
+352.1675 -269.542 m
+
+352.3758 -269.667 352.6258 -269.6253 352.8341 -269.6253 c
+
+S
+
+357.5425 -270.917 m
+
+357.5425 -270.792 357.6675 -270.2086 357.6675 -270.0836 c
+
+S
+
+356.1675 -270.7086 m
+
+356.2925 -270.5836 356.8758 -270.292 357.0008 -270.167 c
+
+S
+
+355.6258 -269.7086 m
+
+355.9175 -269.7086 356.2508 -269.7503 356.5425 -269.667 c
+
+S
+
+355.6258 -268.3753 m
+
+356.0008 -268.417 356.3758 -268.542 356.7508 -268.5003 c
+
+S
+
+359.2092 -268.8753 m
+
+359.5008 -268.8753 359.7925 -269.0003 360.0842 -268.9586 c
+
+S
+
+359.2092 -269.9586 m
+
+359.4592 -269.9586 360.1675 -269.8336 360.4175 -269.8336 c
+
+S
+
+359.5008 -271.3753 m
+
+359.7925 -271.3336 360.4175 -271.0003 360.6675 -271.0003 c
+
+S
+
+364.0841 -272.5836 m
+
+364.0425 -272.417 364.1258 -272.2503 364.2091 -272.0836 c
+
+S
+
+362.9591 -272.042 m
+
+363.1675 -271.9586 363.3758 -271.9586 363.5008 -271.7503 c
+
+S
+
+362.4175 -270.9586 m
+
+362.6675 -270.9586 363.1675 -270.8336 363.4175 -270.7503 c
+
+S
+
+362.4591 -269.667 m
+
+362.7091 -269.667 363.0008 -269.667 363.2508 -269.667 c
+
+S
+
+365.2925 -269.2086 m
+
+365.5008 -269.2086 365.8758 -269.2503 366.0841 -269.2503 c
+
+S
+
+365.2925 -270.1253 m
+
+365.5425 -270.1253 365.7508 -270.1253 366.0008 -270.1253 c
+
+S
+
+365.4175 -271.167 m
+
+365.6258 -271.2086 365.8341 -271.292 366.0841 -271.2503 c
+
+S
+
+372.9591 -271.3753 m
+
+372.9591 -271.2086 372.9591 -271.0003 372.9591 -270.8336 c
+
+S
+
+372.1675 -271.4586 m
+
+372.1675 -271.417 372.1258 -271.3753 372.2508 -271.3336 C
+
+372.1258 -271.292 372.1258 -270.5836 372.0008 -270.542 c
+
+S
+
+361.1675 -271.8336 m
+
+361.5008 -271.8336 361.6675 -271.5003 361.7092 -271.2086 c
+
+S
+
+0 To
+
+1 0 0 1 363.4174 -313.2087 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers-Light 7 Tf
+
+0 Ta
+
+(Sand) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.504 w [0.504 1.08 ]0 d
+
+356.0007 -310.292 m
+
+356.0372 -314.9585 362.9174 -319.042 371.3341 -319.042 c
+
+379.7507 -319.042 389.7507 -314.542 387.9174 -310.292 c
+
+384.7124 -302.8623 374.5841 -306.6253 371.0007 -302.3753 c
+
+368.0561 -298.8829 355.9174 -299.6253 356.0007 -310.292 c
+
+s
+
+0 To
+
+1 0 0 1 346.2132 -0.2991 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w []0 d
+
+/_Univers-Oblique 6 Tf
+
+1 Ta
+
+(UI-5 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+352.8404 1.0825 m
+
+359.5547 -0.6382 l
+
+S
+
+356.9894 1.3759 m
+
+359.9511 -0.7526 L
+
+356.3703 -1.4442 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 343.0833 -53.82 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UI-5 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+349.7105 -52.4384 m
+
+356.4248 -54.1591 l
+
+S
+
+353.8595 -52.145 m
+
+356.8212 -54.2734 L
+
+353.2403 -54.965 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 350.8334 -99.9788 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UI-5 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+357.4606 -98.5972 m
+
+364.1748 -100.3179 l
+
+S
+
+361.6096 -98.3038 m
+
+364.5713 -100.4323 L
+
+360.9904 -101.1239 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 348.5 -145.0205 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(UI-5 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+355.1272 -143.6389 m
+
+361.8415 -145.3596 l
+
+S
+
+359.2762 -143.3455 m
+
+362.238 -145.4739 L
+
+358.6571 -146.1655 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 102.9165 -539.3125 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+0 Ta
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 \r) Tx 
+
+0 -7 Td
+
+(Spacing may vary ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 399.2499 -103.6455 0 Tp
+
+TP
+
+0 Tr
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 399.2499 -145.0205 0 Tp
+
+TP
+
+0 Tr
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 \r) Tx 
+
+0 -7 Td
+
+(Spacing may \r) Tx 
+
+0 -7 Td
+
+(vary) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 391.963 1.43 0 Tp
+
+TP
+
+0 Tr
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 \r) Tx 
+
+0 -7 Td
+
+(Wing length .575 \r) Tx 
+
+0 -7 Td
+
+(Wing angle 45) Tx 
+
+/_Univers-Oblique 3 Tf
+
+2.7 Ts
+
+(o) Tx 
+
+/_Univers-Oblique 6 Tf
+
+0 Ts
+
+( ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 394.6664 -51.125 0 Tp
+
+TP
+
+0 Tr
+
+(Perennial .2 \r) Tx 
+
+0 -7 Td
+
+(Intermittent .1 \r) Tx 
+
+0 -7 Td
+
+(Wing length .575 \r) Tx 
+
+0 -7 Td
+
+(Wing angle 45) Tx 
+
+/_Univers-Oblique 3 Tf
+
+2.7 Ts
+
+(o) Tx 
+
+/_Univers-Oblique 6 Tf
+
+0 Ts
+
+( ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 369.7132 -13.4658 0 Tp
+
+TP
+
+-14.5049 0 Td
+
+0 Tr
+
+1 Ta
+
+(Dash 1.25 \r) Tx 
+
+1.8325 -7 Td
+
+(Space .5 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 372 -67.3958 0 Tp
+
+TP
+
+-14.5049 0 Td
+
+0 Tr
+
+(Dash 1.25 \r) Tx 
+
+1.8325 -7 Td
+
+(Space .5 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 387.6667 -112.5413 0 Tp
+
+TP
+
+-25.6743 0 Td
+
+0 Tr
+
+2 Ta
+
+(Dash 2.5 \r) Tx 
+
+0.3296 -7 Td
+
+(Space .5 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 388.6667 -161.1872 0 Tp
+
+TP
+
+-25.6743 0 Td
+
+0 Tr
+
+(Dash 2.5 \r) Tx 
+
+0.3296 -7 Td
+
+(Space .5 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 385.3341 -195.5625 0 Tp
+
+TP
+
+-29.3437 0 Td
+
+0 Tr
+
+(Pattern 17 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 380.5841 -228.2292 0 Tp
+
+TP
+
+-27.0044 0 Td
+
+0 Tr
+
+(Weight .2 \r) Tx 
+
+2.3306 -7 Td
+
+(8% cyan ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 391.0841 -265.7087 0 Tp
+
+TP
+
+0 Tr
+
+0 Ta
+
+(Coastline .2 \r) Tx 
+
+0 -7 Td
+
+(Coral reef .075 \r) Tx 
+
+0 -7 Td
+
+(Draft as shown ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 391.5 -308.5208 0 Tp
+
+TP
+
+0 Tr
+
+(Diameter .175 \r) Tx 
+
+0 -7 Td
+
+(Space .375 ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 386.7507 -328.4587 0 Tp
+
+TP
+
+-26.5056 0 Td
+
+0 Tr
+
+1 Ta
+
+(May also be shown \r) Tx 
+
+2.3291 -7 Td
+
+(as pattern 17 and \r) Tx 
+
+6.6694 -7 Td
+
+(no boundary ) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 348.3757 -303.6666 0 Tp
+
+TP
+
+-7.333 0 Td
+
+0 Tr
+
+(UL-7 ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+354.6049 -302.667 m
+
+362.1982 -307.7368 l
+
+S
+
+360.4309 -304.9956 m
+
+362.5356 -307.9743 L
+
+358.9251 -307.4591 l
+
+S
+
+U
+
+u
+
+410.3623 -561.6357 m
+
+403.5232 -559.6763 l
+
+S
+
+405.9619 -561.8416 m
+
+403.1345 -559.5382 L
+
+406.7506 -559.0643 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 417.5 -564.5625 0 Tp
+
+TP
+
+-6.4988 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(U-7  ) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.576 w
+
+286.839 -437.8807 m
+
+280.339 -442.5474 270.5056 -458.5474 268.6723 -464.214 c
+
+S
+
+302.7348 -438.6099 m
+
+299.0681 -441.6099 287.9015 -455.6099 283.4015 -466.2765 c
+
+S
+
+0 To
+
+1 0 0 1 296.3894 -464.9701 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+0 Ta
+
+(Right \r) Tx 
+
+0 -7 Td
+
+(bank ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+296.5331 -461.0374 m
+
+292.4606 -455.2044 l
+
+S
+
+292.988 -458.4227 m
+
+292.2459 -454.8521 L
+
+295.3514 -456.7644 l
+
+S
+
+U
+
+0 O
+
+0 g
+
+288.7629 -446.6229 m
+
+285.5484 -447.5389 l
+
+290.202 -444.5442 L
+
+289.2137 -449.9236 l
+
+288.7629 -446.6229 l
+
+b
+
+0.576 w
+
+289.2933 -445.832 m
+
+284.9431 -450.1932 283.4541 -453.073 281.4479 -457.628 c
+
+S
+
+365.4375 -442.3333 m
+
+358.9375 -447 349.1042 -463 347.2709 -468.6666 c
+
+S
+
+381.3334 -443.0625 m
+
+377.6667 -446.0625 366.5 -460.0625 362 -470.7291 c
+
+S
+
+0 To
+
+1 0 0 1 374.988 -469.4227 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(Right \r) Tx 
+
+0 -7 Td
+
+(bank ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+375.1317 -465.49 m
+
+371.0591 -459.657 l
+
+S
+
+371.5866 -462.8753 m
+
+370.8445 -459.3047 L
+
+373.9499 -461.217 l
+
+S
+
+U
+
+0 To
+
+1 0 0 1 392.5 -446.5625 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(Stem length 5.0\r) Tx 
+
+0 -7 Td
+
+(Stem weight .2\r) Tx 
+
+0 -7 Td
+
+(Barb length 2.0\r) Tx 
+
+0 -7 Td
+
+(Barb angle 25) Tx 
+
+/_Univers-Oblique 3 Tf
+
+2.7 Ts
+
+(o) Tx 
+
+/_Univers-Oblique 6 Tf
+
+0 Ts
+
+( ) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.288 w
+
+367.3615 -451.0755 m
+
+364.147 -451.9915 l
+
+368.8006 -448.9968 L
+
+367.8123 -454.3762 l
+
+367.3615 -451.0755 l
+
+b
+
+0.576 w
+
+367.8919 -450.2846 m
+
+363.5417 -454.6458 362.0527 -457.5256 360.0465 -462.0806 c
+
+S
+
+285.5006 -498.5152 m
+
+279.0006 -503.1818 269.1673 -519.1818 267.3339 -524.8485 c
+
+S
+
+301.3964 -499.2443 m
+
+297.7298 -502.2443 286.5631 -516.2443 282.0631 -526.911 c
+
+S
+
+0 To
+
+1 0 0 1 299.5511 -519.7296 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(Left \r) Tx 
+
+0 -7 Td
+
+(bank ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+299.1141 -517.078 m
+
+293.2572 -513.0398 l
+
+S
+
+294.878 -515.8698 m
+
+292.9328 -512.7849 L
+
+296.5112 -513.4891 l
+
+S
+
+U
+
+0 O
+
+0 g
+
+280.1685 -517.1579 m
+
+283.231 -515.8187 l
+
+279.0214 -519.411 L
+
+279.2788 -513.9476 l
+
+280.1685 -517.1579 l
+
+b
+
+0.576 w
+
+287.7049 -505.9665 m
+
+283.3548 -510.3277 281.8658 -513.2075 279.8596 -517.7624 c
+
+S
+
+383.4496 -496.3482 m
+
+376.9496 -501.0148 367.1163 -517.0148 365.2829 -522.6815 c
+
+S
+
+399.3454 -497.0773 m
+
+395.6787 -500.0773 384.5121 -514.0773 380.0121 -524.744 c
+
+S
+
+0 To
+
+1 0 0 1 397.5 -517.5625 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+(Left \r) Tx 
+
+0 -7 Td
+
+(bank ) Tx 
+
+(\r) TX 
+
+TO
+
+u
+
+0 R
+
+0 G
+
+0.288 w
+
+397.0631 -514.911 m
+
+391.2062 -510.8728 l
+
+S
+
+392.8269 -513.7028 m
+
+390.8818 -510.6179 L
+
+394.4602 -511.3221 l
+
+S
+
+U
+
+0 O
+
+0 g
+
+378.1175 -514.9909 m
+
+381.1799 -513.6517 l
+
+376.9704 -517.244 L
+
+377.2277 -511.7806 l
+
+378.1175 -514.9909 l
+
+b
+
+0.576 w
+
+385.6539 -503.7995 m
+
+381.3037 -508.1607 379.8147 -511.0405 377.8086 -515.5954 c
+
+S
+
+0 To
+
+1 0 0 1 279.5416 -560.6458 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w
+
+/_Univers 7 Tf
+
+(Salt) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 388.875 -561.3125 0 Tp
+
+TP
+
+0 Tr
+
+(Salt) Tx 
+
+(\r) TX 
+
+TO
+
+0 To
+
+1 0 0 1 285.3333 -375.75 0 Tp
+
+TP
+
+-10.3094 0 Td
+
+0 Tr
+
+1 Ta
+
+(SPOIL\r) Tx 
+
+0.7793 -8.5 Td
+
+(AREA) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.504 w [7.2 1.44 ]0 d
+
+263.625 -377.5625 m
+
+263.4484 -384.1863 275.4996 -391.2201 284 -391.3125 c
+
+294.6668 -391.4285 307.4999 -387.1966 307.625 -379.5625 c
+
+307.7605 -371.2967 298.9894 -364.5367 287.375 -364.6875 c
+
+277.75 -364.8125 263.875 -368.1875 263.625 -377.5625 c
+
+s
+
+0 To
+
+1 0 0 1 374.2083 -375.75 0 Tp
+
+TP
+
+-10.3094 0 Td
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w []0 d
+
+(SPOIL\r) Tx 
+
+0.7793 -8.5 Td
+
+(AREA) Tx 
+
+(\r) TX 
+
+TO
+
+0 R
+
+0 G
+
+0.504 w [7.2 1.44 ]0 d
+
+352.5 -377.5625 m
+
+352.3234 -384.1863 364.3746 -391.2201 372.875 -391.3125 c
+
+383.5418 -391.4285 396.3749 -387.1966 396.5 -379.5625 c
+
+396.6355 -371.2967 387.8644 -364.5367 376.25 -364.6875 c
+
+366.625 -364.8125 352.75 -368.1875 352.5 -377.5625 c
+
+s
+
+0 To
+
+1 0 0 1 399.875 -372.2708 0 Tp
+
+TP
+
+0 Tr
+
+0 O
+
+0 g
+
+1 w []0 d
+
+/_Univers-Oblique 6 Tf
+
+0 Ta
+
+(Dash 2.5 \r) Tx 
+
+0 -7 Td
+
+(Space .5 \r) Tx 
+
+0 -7 Td
+
+(Weight .175 \r) Tx 
+
+0 -7 Td
+
+(U-7) Tx 
+
+(\r) TX 
+
+TO
+
+%%PageTrailer
+
+gsave annotatepage grestore showpage
+
+%%Trailer
+
+Adobe_Illustrator_AI3 /terminate get exec
+
+Adobe_pattern_AI3 /terminate get exec
+
+Adobe_typography_AI3 /terminate get exec
+
+Adobe_customcolor /terminate get exec
+
+Adobe_cshow /terminate get exec
+
+Adobe_cmykcolor /terminate get exec
+
+Adobe_packedarray /terminate get exec
+
+%%EOF
+
