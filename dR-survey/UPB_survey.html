@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geo-Thermochronology data reduction survey <title>
+<style>
+  :root {
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --line: #d1d5db;
+    --accent: #1d4ed8;
+    --accent-light: #eff6ff;
+    --bg: #f9fafb;
+    --card: #ffffff;
+    --error: #b91c1c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    margin: 0;
+    padding: 0 16px 64px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header {
+    padding: 40px 0 24px;
+  }
+  header h1 {
+    font-size: 1.6rem;
+    margin: 0 0 8px;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.97rem;
+  }
+  form { display: flex; flex-direction: column; gap: 18px; }
+  fieldset {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 22px 22px;
+    margin: 0;
+  }
+  legend {
+    font-weight: 600;
+    padding: 0 6px;
+    font-size: 1.02rem;
+  }
+  .optional-tag {
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-left: 6px;
+  }
+  .hint {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin: -4px 0 12px;
+  }
+  .option-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 0;
+  }
+  .option-row input[type="checkbox"],
+  .option-row input[type="radio"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+  .option-row label {
+    cursor: pointer;
+  }
+  .other-text {
+    margin-left: 24px;
+    margin-top: 4px;
+  }
+  input[type="text"], textarea, select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: #fff;
+    color: var(--ink);
+  }
+  input[type="text"]:disabled { background: #f3f4f6; color: var(--muted); }
+  .sub-question {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--accent-light);
+    display: none;
+  }
+  .sub-question.visible { display: block; }
+  .sub-question > .q-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .error-msg {
+    color: var(--error);
+    font-size: 0.85rem;
+    margin-top: 8px;
+    display: none;
+  }
+  fieldset.invalid { border-color: var(--error); }
+  fieldset.invalid .error-msg { display: block; }
+  .submit-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 8px;
+  }
+  button[type="submit"] {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  #status-msg {
+    font-size: 0.9rem;
+  }
+  #status-msg.err { color: var(--error); }
+  #status-msg.ok { color: #15803d; }
+  #thankyou {
+    display: none;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 40px 28px;
+    text-align: center;
+  }
+  #thankyou h2 { margin-top: 0; }
+  .q-number { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Geo-Thermochronology data reduction and viz survey</h1>
+    <p>Thank you for taking the time to fill out this survey! All questions are required unless marked <strong>(optional)</strong>. Fields marked with an asterisk (*) are required.</p>
+  </header>
+
+  <form id="survey-form" novalidate>
+
+    <!-- Q1 -->
+    <fieldset data-qid="q1" data-type="checkbox-group">
+      <legend><span class="q-number">1.</span> For which applications do you use geochronology/thermochronology? *</legend>
+      <p class="hint">Select all that apply.</p>
+      <div class="option-row"><input type="checkbox" id="q1-1" name="q1" value="Tectonics"><label for="q1-1">Tectonics</label></div>
+      <div class="option-row"><input type="checkbox" id="q1-2" name="q1" value="Basin analysis"><label for="q1-2">Basin analysis</label></div>
+      <div class="option-row"><input type="checkbox" id="q1-3" name="q1" value="Bracketing other chronologies"><label for="q1-3">Bracketing other chronologies</label></div>
+      <div class="option-row"><input type="checkbox" id="q1-4" name="q1" value="Bracketing paleontology"><label for="q1-4">Bracketing paleontology</label></div>
+      <div class="option-row"><input type="checkbox" id="q1-5" name="q1" value="Economic geology"><label for="q1-5">Economic geology</label></div>
+      <div class="option-row"><input type="checkbox" id="q1-6" name="q1" value="Industry applications"><label for="q1-6">Industry applications</label></div>
+      <div class="option-row"><input type="checkbox" id="q1-7" name="q1" value="Other" data-other-toggle="q1-other-text"><label for="q1-7">Other</label></div>
+      <div class="other-text"><input type="text" id="q1-other-text" placeholder="Please specify" disabled></div>
+      <div class="error-msg">Please select at least one option.</div>
+    </fieldset>
+
+    <!-- Q2 -->
+    <fieldset data-qid="q2" data-type="checkbox-group">
+      <legend><span class="q-number">2.</span> Which minerals do you use for analysis? *</legend>
+      <p class="hint">Select all that apply.</p>
+      <div class="option-row"><input type="checkbox" id="q2-1" name="q2" value="Zircon"><label for="q2-1">Zircon</label></div>
+      <div class="option-row"><input type="checkbox" id="q2-2" name="q2" value="Rutile"><label for="q2-2">Rutile</label></div>
+      <div class="option-row"><input type="checkbox" id="q2-3" name="q2" value="Apatite"><label for="q2-3">Apatite</label></div>
+      <div class="option-row"><input type="checkbox" id="q2-4" name="q2" value="Titanite"><label for="q2-4">Titanite</label></div>
+      <div class="option-row"><input type="checkbox" id="q2-5" name="q2" value="Monazite"><label for="q2-5">Monazite</label></div>
+      <div class="option-row"><input type="checkbox" id="q2-6" name="q2" value="Garnet"><label for="q2-6">Garnet</label></div>
+      <div class="option-row"><input type="checkbox" id="q2-7" name="q2" value="Other" data-other-toggle="q2-other-text"><label for="q2-7">Other</label></div>
+      <div class="other-text"><input type="text" id="q2-other-text" placeholder="Please specify" disabled></div>
+      <div class="error-msg">Please select at least one option.</div>
+    </fieldset>
+
+    <!-- Q3 -->
+    <fieldset data-qid="q3" data-type="checkbox-group">
+      <legend><span class="q-number">3.</span> Which systems do you use primarily? *</legend>
+      <p class="hint">Select all that apply.</p>
+      <div class="option-row"><input type="checkbox" id="q3-1" name="q3" value="U-Pb"><label for="q3-1">U-Pb</label></div>
+      <div class="option-row"><input type="checkbox" id="q3-2" name="q3" value="Radiocarbon"><label for="q3-2">Radiocarbon</label></div>
+      <div class="option-row"><input type="checkbox" id="q3-3" name="q3" value="(U-Th)/He +/- Sm"><label for="q3-3">(U-Th)/He +/- Sm</label></div>
+      <div class="option-row"><input type="checkbox" id="q3-4" name="q3" value="Lu-Hf"><label for="q3-4">Lu-Hf</label></div>
+      <div class="option-row"><input type="checkbox" id="q3-5" name="q3" value="Fission Track"><label for="q3-5">Fission Track</label></div>
+      <div class="option-row"><input type="checkbox" id="q3-6" name="q3" value="Trace and rare earth elements"><label for="q3-6">Trace and rare earth elements</label></div>
+      <div class="option-row"><input type="checkbox" id="q3-7" name="q3" value="Other" data-other-toggle="q3-other-text"><label for="q3-7">Other</label></div>
+      <div class="other-text"><input type="text" id="q3-other-text" placeholder="Please specify" disabled></div>
+      <div class="error-msg">Please select at least one option.</div>
+    </fieldset>
+
+    <!-- Q4 -->
+    <fieldset data-qid="q4" data-type="checkbox-group">
+      <legend><span class="q-number">4.</span> Which tasks are you commonly performing? *</legend>
+      <p class="hint">Select all that apply.</p>
+      <div class="option-row"><input type="checkbox" id="q4-1" name="q4" value="Comparing samples (similarity, likeness, MDS, non-negative matrix factorization)"><label for="q4-1">Comparing samples (similarity, likeness, MDS, non-negative matrix factorization)</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-2" name="q4" value="Weighted means (including MSWD)"><label for="q4-2">Weighted means (including MSWD)</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-3" name="q4" value="Regression (including isochrons)"><label for="q4-3">Regression (including isochrons)</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-4" name="q4" value="Age modeling"><label for="q4-4">Age modeling</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-5" name="q4" value="Trace elements"><label for="q4-5">Trace elements</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-6" name="q4" value="Calculating the age of analyses or samples"><label for="q4-6">Calculating the age of analyses or samples</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-7" name="q4" value="Plotting samples (age distributions, MDAs, ranked date plots, age v. parameter)"><label for="q4-7">Plotting samples (age distributions (histograms, PDPs, KDEs), MDAs, ranked date plots, age v. parameter)</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-8" name="q4" value="Calculating and plotting concordia/discordance"><label for="q4-8">Calculating and plotting concordia/discordance</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-9" name="q4" value="Calculating closure temperatures"><label for="q4-9">Calculating closure temperatures</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-10" name="q4" value="Calculating maximum depositional ages"><label for="q4-10">Calculating maximum depositional ages</label></div>
+      <div class="option-row"><input type="checkbox" id="q4-11" name="q4" value="Other" data-other-toggle="q4-other-text"><label for="q4-11">Other</label></div>
+      <div class="other-text"><input type="text" id="q4-other-text" placeholder="Please specify" disabled></div>
+      <div class="error-msg">Please select at least one option.</div>
+    </fieldset>
+
+    <!-- Q5 -->
+    <fieldset data-qid="q5" data-type="checkbox-group">
+      <legend><span class="q-number">5.</span> Which tools do you use to do your data reduction and analysis? *</legend>
+      <p class="hint">Select all that apply.</p>
+      <div class="option-row"><input type="checkbox" id="q5-1" name="q5" value="Some in-house tools"><label for="q5-1">Some in-house tools</label></div>
+      <div class="option-row"><input type="checkbox" id="q5-2" name="q5" value="Spreadsheet application, with or without an add-on (e.g., Excel, Google Sheets, LibreOffice, Excel + Isoplot, etc.)"><label for="q5-2">Spreadsheet application, with or without an add-on (e.g., Excel, Google Sheets, LibreOffice, Excel + Isoplot, etc.)</label></div>
+      <div class="option-row"><input type="checkbox" id="q5-3" name="q5" value="Coding (e.g., custom-made Python, R, Matlab, or other languages)"><label for="q5-3">Coding (e.g., custom-made Python, R, Matlab, or other languages)</label></div>
+      <div class="option-row"><input type="checkbox" id="q5-4" name="q5" value="Released open-source packages (e.g., detritalPy, dzMDA, dzStats, AgeCalc, Saturn-UPb, IsoplotR, IsoplotR-Gui)"><label for="q5-4">Released open-source packages (e.g., detritalPy, dzMDA, dzStats, AgeCalc, Saturn-UPb, IsoplotR, IsoplotR-Gui)</label></div>
+      <div class="option-row"><input type="checkbox" id="q5-5" name="q5" value="Proprietary or non-free packages (e.g., Iolite)"><label for="q5-5">Proprietary or non-free packages (e.g., Iolite)</label></div>
+      <div class="option-row"><input type="checkbox" id="q5-6" name="q5" value="Other" data-other-toggle="q5-other-text"><label for="q5-6">Other</label></div>
+      <div class="other-text"><input type="text" id="q5-other-text" placeholder="Please specify" disabled></div>
+      <div class="error-msg">Please select at least one option.</div>
+    </fieldset>
+
+    <!-- Q6 -->
+    <fieldset data-qid="q6" data-type="checkbox-group">
+      <legend><span class="q-number">6.</span> What do you use to visualize/plot your data? *</legend>
+      <p class="hint">Select all that apply.</p>
+      <div class="option-row"><input type="checkbox" id="q6-1" name="q6" value="Some in-house tools"><label for="q6-1">Some in-house tools</label></div>
+      <div class="option-row"><input type="checkbox" id="q6-2" name="q6" value="Spreadsheet application, with or without an add-on (e.g., Excel, Google Sheets, LibreOffice, Excel + Isoplot, etc.)"><label for="q6-2">Spreadsheet application, with or without an add-on (e.g., Excel, Google Sheets, LibreOffice, Excel + Isoplot, etc.)</label></div>
+      <div class="option-row"><input type="checkbox" id="q6-3" name="q6" value="Coding (e.g., custom-made Python, R, Matlab, or other languages)"><label for="q6-3">Coding (e.g., custom-made Python, R, Matlab, or other languages)</label></div>
+      <div class="option-row"><input type="checkbox" id="q6-4" name="q6" value="Released open-source packages (e.g., detritalPy, dzMDA, dzStats, AgeCalc, Saturn-UPb, IsoplotR, IsoplotR-Gui)"><label for="q6-4">Released open-source packages (e.g., detritalPy, dzMDA, dzStats, AgeCalc, Saturn-UPb, IsoplotR, IsoplotR-Gui)</label></div>
+      <div class="option-row"><input type="checkbox" id="q6-5" name="q6" value="A graphics editing software (e.g., Illustrator, Inkscape, PowerPoint)"><label for="q6-5">A graphics editing software (e.g., Illustrator, Inkscape, PowerPoint)</label></div>
+      <div class="option-row"><input type="checkbox" id="q6-6" name="q6" value="Other" data-other-toggle="q6-other-text"><label for="q6-6">Other</label></div>
+      <div class="other-text"><input type="text" id="q6-other-text" placeholder="Please specify" disabled></div>
+      <div class="error-msg">Please select at least one option.</div>
+    </fieldset>
+
+    <!-- Q7 -->
+    <fieldset data-qid="q7" data-type="radio-group">
+      <legend><span class="q-number">7.</span> When making publication-ready figures, is using Illustrator, Inkscape, or PowerPoint a part of your workflow? *</legend>
+      <div class="option-row"><input type="radio" id="q7-yes" name="q7" value="Yes"><label for="q7-yes">Yes</label></div>
+      <div class="option-row"><input type="radio" id="q7-no" name="q7" value="No"><label for="q7-no">No</label></div>
+      <div class="error-msg">Please select an option.</div>
+    </fieldset>
+
+    <!-- Q8 -->
+    <fieldset data-qid="q8" data-type="radio-group">
+      <legend><span class="q-number">8.</span> Is coding/programming part of your regular workflow (for data reduction, analysis, comparison, or visualization)? *</legend>
+      <div class="option-row"><input type="radio" id="q8-yes" name="q8" value="Yes" data-reveals="q8-sub"><label for="q8-yes">Yes</label></div>
+      <div class="option-row"><input type="radio" id="q8-no" name="q8" value="No" data-reveals="q8-sub" data-hides="q8-sub"><label for="q8-no">No</label></div>
+      <div class="error-msg">Please select an option.</div>
+
+      <div class="sub-question" id="q8-sub" data-qid="q8a" data-type="radio-group-conditional">
+        <span class="q-label">8a. If yes, are you developing this code yourself (using GenAI to assist included) or using another package (e.g., detritalPy, IsoplotR command-line)?</span>
+        <div class="option-row"><input type="radio" id="q8a-1" name="q8a" value="Developing myself"><label for="q8a-1">Developing myself</label></div>
+        <div class="option-row"><input type="radio" id="q8a-2" name="q8a" value="Using existing packages"><label for="q8a-2">Using existing packages</label></div>
+        <div class="option-row"><input type="radio" id="q8a-3" name="q8a" value="Combination of both"><label for="q8a-3">Combination of both</label></div>
+        <div class="error-msg">Please select an option.</div>
+      </div>
+
+      <div class="sub-question" id="q8b-sub" data-qid="q8b" data-type="checkbox-group-conditional">
+        <span class="q-label">8b. If coding/programming is a part of your workflow, which language(s)?</span>
+        <div class="option-row"><input type="checkbox" id="q8b-1" name="q8b" value="Python"><label for="q8b-1">Python</label></div>
+        <div class="option-row"><input type="checkbox" id="q8b-2" name="q8b" value="Matlab"><label for="q8b-2">Matlab</label></div>
+        <div class="option-row"><input type="checkbox" id="q8b-3" name="q8b" value="R"><label for="q8b-3">R</label></div>
+        <div class="option-row"><input type="checkbox" id="q8b-4" name="q8b" value="Octave"><label for="q8b-4">Octave</label></div>
+        <div class="option-row"><input type="checkbox" id="q8b-5" name="q8b" value="Julia"><label for="q8b-5">Julia</label></div>
+        <div class="option-row"><input type="checkbox" id="q8b-6" name="q8b" value="C, C#, C++"><label for="q8b-6">C, C#, C++</label></div>
+        <div class="option-row"><input type="checkbox" id="q8b-7" name="q8b" value="Other" data-other-toggle="q8b-other-text"><label for="q8b-7">Other</label></div>
+        <div class="other-text"><input type="text" id="q8b-other-text" placeholder="Please specify" disabled></div>
+        <div class="error-msg">Please select at least one option.</div>
+      </div>
+    </fieldset>
+
+    <!-- Q9 -->
+    <fieldset data-qid="q9" data-type="none">
+      <legend><span class="q-number">9.</span> If you were an original user of Ken Ludwig's software Isoplot, a macro for Microsoft Excel <span class="optional-tag">(optional &mdash; skip if not applicable)</span></legend>
+
+      <div class="sub-question visible" data-qid="q9a" data-type="radio-group">
+        <span class="q-label">Do you still use this program?</span>
+        <div class="option-row"><input type="radio" id="q9a-yes" name="q9a" value="Yes"><label for="q9a-yes">Yes</label></div>
+        <div class="option-row"><input type="radio" id="q9a-no" name="q9a" value="No"><label for="q9a-no">No</label></div>
+      </div>
+
+      <div class="sub-question visible" data-qid="q9b" data-type="text">
+        <label class="q-label" for="q9b-text">Which features do you either use the most or miss the most?</label>
+        <textarea id="q9b-text" name="q9b" rows="3" placeholder="Short answer"></textarea>
+      </div>
+    </fieldset>
+
+    <p style="color: var(--muted); font-size: 0.9rem; margin: -6px 0 0;">Demographic questions</p>
+
+    <!-- Q10 -->
+    <fieldset data-qid="q10" data-type="radio-group">
+      <legend><span class="q-number">10.</span> What is your profession? *</legend>
+      <div class="option-row"><input type="radio" id="q10-1" name="q10" value="Undergraduate student"><label for="q10-1">Undergraduate student</label></div>
+      <div class="option-row"><input type="radio" id="q10-2" name="q10" value="Graduate student"><label for="q10-2">Graduate student</label></div>
+      <div class="option-row"><input type="radio" id="q10-3" name="q10" value="Post-doctoral scholar"><label for="q10-3">Post-doctoral scholar</label></div>
+      <div class="option-row"><input type="radio" id="q10-4" name="q10" value="Faculty (either tenure or non-tenure)"><label for="q10-4">Faculty (either tenure or non-tenure)</label></div>
+      <div class="option-row"><input type="radio" id="q10-5" name="q10" value="Research scientist"><label for="q10-5">Research scientist</label></div>
+      <div class="option-row"><input type="radio" id="q10-6" name="q10" value="Industry"><label for="q10-6">Industry</label></div>
+      <div class="option-row"><input type="radio" id="q10-7" name="q10" value="Independent scholar/consultant"><label for="q10-7">Independent scholar/consultant</label></div>
+      <div class="error-msg">Please select an option.</div>
+    </fieldset>
+
+    <!-- Q11 -->
+    <fieldset data-qid="q11" data-type="radio-group">
+      <legend><span class="q-number">11.</span> Which operating system do you use primarily? *</legend>
+      <div class="option-row"><input type="radio" id="q11-1" name="q11" value="Microsoft Windows"><label for="q11-1">Microsoft Windows</label></div>
+      <div class="option-row"><input type="radio" id="q11-2" name="q11" value="MacOS"><label for="q11-2">MacOS</label></div>
+      <div class="option-row"><input type="radio" id="q11-3" name="q11" value="Linux"><label for="q11-3">Linux</label></div>
+      <div class="error-msg">Please select an option.</div>
+    </fieldset>
+
+    <!-- Q12 -->
+    <fieldset data-qid="q12" data-type="none">
+      <legend><span class="q-number">12.</span> Which country do you reside in? <span class="optional-tag">(optional)</span></legend>
+      <input type="text" id="q12-text" name="q12" placeholder="Short answer">
+    </fieldset>
+
+    <div class="submit-row">
+      <button type="submit" id="submit-btn">Submit survey</button>
+      <span id="status-msg"></span>
+    </div>
+  </form>
+
+  <div id="thankyou">
+    <h2>Thank you!</h2>
+    <p>Your response has been recorded. We appreciate you taking the time to fill out this survey.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------------------------------------------------------------------
+  // CONFIGURE ME: paste the URL of your deployed Google Apps Script Web App
+  // (see the setup instructions that came with this file).
+  // ---------------------------------------------------------------------
+  var GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbyMygzrgGoWFjc9y5LTP7PPnEeXhpV3xLMhzZCT-70FD4XPKLJ023DWS1iREGZaP6M/exec";
+
+  var form = document.getElementById("survey-form");
+  var statusMsg = document.getElementById("status-msg");
+  var submitBtn = document.getElementById("submit-btn");
+  var thankyou = document.getElementById("thankyou");
+
+  // --- "Other" text field enabling -------------------------------------
+  document.querySelectorAll("[data-other-toggle]").forEach(function (input) {
+    var targetId = input.getAttribute("data-other-toggle");
+    var target = document.getElementById(targetId);
+    input.addEventListener("change", function () {
+      if (input.type === "checkbox") {
+        target.disabled = !input.checked;
+      } else {
+        // radio: enable only if this particular "Other" radio is checked
+        var groupName = input.name;
+        document.querySelectorAll('input[name="' + groupName + '"]').forEach(function (radio) {
+          if (radio !== input) return;
+        });
+        target.disabled = !input.checked;
+      }
+      if (!target.disabled) {
+        target.focus();
+      } else {
+        target.value = "";
+      }
+    });
+  });
+
+  // For radio groups where multiple radios might share a group but only one
+  // has data-other-toggle, also clear/disable the other-text box when a
+  // different radio in the same group is chosen.
+  document.querySelectorAll('fieldset[data-type="radio-group"], .sub-question[data-type^="radio-group"]').forEach(function (scope) {
+    var otherToggleInput = scope.querySelector("[data-other-toggle]");
+    if (!otherToggleInput) return;
+    var groupName = otherToggleInput.name;
+    var target = document.getElementById(otherToggleInput.getAttribute("data-other-toggle"));
+    scope.querySelectorAll('input[name="' + groupName + '"]').forEach(function (radio) {
+      radio.addEventListener("change", function () {
+        if (radio !== otherToggleInput) {
+          target.disabled = true;
+          target.value = "";
+        }
+      });
+    });
+  });
+
+  // --- Conditional reveal for Q8 -> 8a / 8b -----------------------------
+  var q8Yes = document.getElementById("q8-yes");
+  var q8No = document.getElementById("q8-no");
+  var q8aBlock = document.getElementById("q8-sub");
+  var q8bBlock = document.getElementById("q8b-sub");
+
+  function updateQ8Visibility() {
+    var show = q8Yes.checked;
+    q8aBlock.classList.toggle("visible", show);
+    q8bBlock.classList.toggle("visible", show);
+    if (!show) {
+      // clear sub-answers when hidden so they aren't submitted / required
+      q8aBlock.querySelectorAll('input[type="radio"]').forEach(function (r) { r.checked = false; });
+      q8bBlock.querySelectorAll('input[type="checkbox"]').forEach(function (c) { c.checked = false; });
+      var q8bOther = document.getElementById("q8b-other-text");
+      q8bOther.disabled = true;
+      q8bOther.value = "";
+      q8aBlock.classList.remove("invalid");
+      q8bBlock.classList.remove("invalid");
+    }
+  }
+  q8Yes.addEventListener("change", updateQ8Visibility);
+  q8No.addEventListener("change", updateQ8Visibility);
+
+  // --- Validation ---------------------------------------------------------
+  function clearErrors() {
+    document.querySelectorAll(".invalid").forEach(function (el) { el.classList.remove("invalid"); });
+  }
+
+  function groupHasChecked(name) {
+    return !!document.querySelector('input[name="' + name + '"]:checked');
+  }
+
+  function validate() {
+    clearErrors();
+    var firstInvalid = null;
+    var requiredGroups = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q10", "q11"];
+
+    requiredGroups.forEach(function (name) {
+      if (!groupHasChecked(name)) {
+        var fs = document.querySelector('fieldset[data-qid="' + name + '"]');
+        fs.classList.add("invalid");
+        if (!firstInvalid) firstInvalid = fs;
+      }
+    });
+
+    // conditional required: 8a / 8b only when q8 = Yes
+    if (q8Yes.checked) {
+      if (!groupHasChecked("q8a")) {
+        q8aBlock.classList.add("invalid");
+        if (!firstInvalid) firstInvalid = q8aBlock;
+      }
+      if (!groupHasChecked("q8b")) {
+        q8bBlock.classList.add("invalid");
+        if (!firstInvalid) firstInvalid = q8bBlock;
+      }
+    }
+
+    if (firstInvalid) {
+      firstInvalid.scrollIntoView({ behavior: "smooth", block: "center" });
+      return false;
+    }
+    return true;
+  }
+
+  // --- Collect answers into a plain object --------------------------------
+  function collectCheckboxGroup(name, otherInputId) {
+    var values = Array.prototype.slice.call(document.querySelectorAll('input[name="' + name + '"]:checked')).map(function (el) { return el.value; });
+    var result = values.join("; ");
+    if (otherInputId) {
+      var otherInput = document.getElementById(otherInputId);
+      if (otherInput && !otherInput.disabled && otherInput.value.trim() !== "") {
+        result += (result ? " " : "") + "[Other: " + otherInput.value.trim() + "]";
+      }
+    }
+    return result;
+  }
+
+  function collectRadioGroup(name) {
+    var checked = document.querySelector('input[name="' + name + '"]:checked');
+    return checked ? checked.value : "";
+  }
+
+  function buildPayload() {
+    return {
+      timestamp: new Date().toISOString(),
+      q1_applications: collectCheckboxGroup("q1", "q1-other-text"),
+      q2_minerals: collectCheckboxGroup("q2", "q2-other-text"),
+      q3_systems: collectCheckboxGroup("q3", "q3-other-text"),
+      q4_tasks: collectCheckboxGroup("q4", "q4-other-text"),
+      q5_reduction_tools: collectCheckboxGroup("q5", "q5-other-text"),
+      q6_visualization_tools: collectCheckboxGroup("q6", "q6-other-text"),
+      q7_illustrator_in_workflow: collectRadioGroup("q7"),
+      q8_coding_in_workflow: collectRadioGroup("q8"),
+      q8a_developing_own_code: collectRadioGroup("q8a"),
+      q8b_languages: collectCheckboxGroup("q8b", "q8b-other-text"),
+      q9a_still_use_isoplot: collectRadioGroup("q9a"),
+      q9b_isoplot_features: document.getElementById("q9b-text").value.trim(),
+      q10_profession: collectRadioGroup("q10"),
+      q11_operating_system: collectRadioGroup("q11"),
+      q12_country: document.getElementById("q12-text").value.trim()
+    };
+  }
+
+  // --- Submit ---------------------------------------------------------------
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    statusMsg.textContent = "";
+    statusMsg.className = "";
+
+    if (!validate()) {
+      statusMsg.textContent = "Please complete the required questions highlighted below.";
+      statusMsg.className = "err";
+      return;
+    }
+
+    var payload = buildPayload();
+
+    if (!GAS_ENDPOINT || GAS_ENDPOINT.indexOf("PASTE_YOUR") === 0) {
+      statusMsg.textContent = "This form isn't connected to a submission endpoint yet. See the setup instructions.";
+      statusMsg.className = "err";
+      console.warn("Survey payload (not submitted, no endpoint configured):", payload);
+      return;
+    }
+
+    submitBtn.disabled = true;
+    statusMsg.textContent = "Submitting...";
+    statusMsg.className = "";
+
+    // Google Apps Script Web Apps do not return CORS headers, so we fire the
+    // request with mode: "no-cors". We can't read the response, but the
+    // request still reaches the script and appends the row / sends the email.
+    fetch(GAS_ENDPOINT, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    }).then(function () {
+      form.style.display = "none";
+      thankyou.style.display = "block";
+      thankyou.scrollIntoView({ behavior: "smooth", block: "start" });
+    }).catch(function (err) {
+      console.error("Survey submission failed:", err);
+      statusMsg.textContent = "Something went wrong submitting your response. Please try again.";
+      statusMsg.className = "err";
+      submitBtn.disabled = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
