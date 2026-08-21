@@ -92,6 +92,11 @@
 </nav>
 
   <!-- MAIN CONTENT (Markdown enabled!) -->
+
+<div style="background:#1d4ed8; color:#fff; text-align:center; padding:12px 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; font-size:0.95rem;">
+  Take a short survey on Geo-Thermo data reduction, analysis, and visulization! <a href="/UPB_survey.html" style="color:#fff; text-decoration:underline; font-weight:600;">
+</div>
+
   <section class="main-content" markdown="1">
 <!-- <img src="logo_2.png" width="60%">
  <br><br> -->
